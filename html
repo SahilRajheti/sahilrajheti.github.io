@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sahil Rajheti - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    section.reveal {
+      opacity: 1;
+      transform: none;
+    }
+    h2 {
+      border-bottom: 2px solid #222;
+      padding-bottom: 5px;
+    }
+    .social-links a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #0077b5;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="your-photo.jpg" alt="Sahil Rajheti" />
+    <h1>Sahil Rajheti</h1>
+    <p>Cloud Computing • GitHub • Developer</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Sahil Rajheti — a passionate developer working on GitHub, cloud computing, and building creative tech projects. I love learning, creating, and sharing my knowledge through code and blogs.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Git & GitHub</li>
+      <li>HTML / CSS / JS</li>
+      <li>Cloud Computing</li>
+      <li>Python & Data Analytics</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>🚧 Coming soon: Amazing apps and tools I’m building.</p>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>📝 I’ll be sharing tutorials, guides, and tech insights here.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Connect with Me</h2>
+    <div class="social-links">
+      <a href="mailto:sahilkhan701766@gmail.com">Email</a>
+      <a href="https://in.linkedin.com/in/sahil-rajheti-46853029b">LinkedIn</a>
+      <a href="https://x.com/Sahil_Rajheti/status/1912075559418331180">Twitter</a>
+      <a href="https://t.me/sahil_rajheti">Telegram</a>
+      <a href="https://www.instagram.com/sahil_rajheti">Instagram</a>
+      <a href="https://www.facebook.com/sahil_rajheti">Facebook</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Sahil Rajheti. All rights reserved.
+  </footer>
+
+  <script>
+    // Reveal animation on scroll
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      const trigger = window.innerHeight / 1.2;
+      sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top < trigger) section.classList.add('reveal');
+      });
+    });
+  </script>
+
+</body>
+</html>
