@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Rajheti</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      text-align: center;
+      padding: 60px;
+      color: #333;
+    }
+    h1 {
+      color: #007BFF;
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    a {
+      color: white;
+      background: #007BFF;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    a:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hi, I'm Sahil Rajheti</h1>
+  <p>Welcome to my personal website built with GitHub Pages!</p>
+  <a href="https://github.com/SahilRajheti" target="_blank">Visit My GitHub</a>
+</body>
+</html>
