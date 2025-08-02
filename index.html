@@ -1,67 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sahil Rajheti – Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Rajheti Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body {
-      background-color: #111;
-      color: #eee;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 50px 20px;
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
     }
-    h1 {
-      color: #00ff99;
+    body {
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto;
+      display: block;
+      border: 4px solid #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #222;
       margin-bottom: 10px;
     }
-    h3 {
-      color: #aaa;
-      margin-top: 0;
-    }
-    img {
-      border-radius: 50%;
-      width: 130px;
-      height: 130px;
-      margin-bottom: 20px;
-    }
-    .info {
-      max-width: 600px;
-      margin: auto;
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 30px;
-    }
-    a {
-      color: #00aaff;
+    .social a {
+      margin: 0 10px;
+      color: #007bff;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+    .project, .blog {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
-  <!-- Upload your image on GitHub or use a link below -->
-  <img src="https://i.imgur.com/4M34hi2.png" alt="Sahil Rajheti">
+  <header>
+    <h1>Sahil Rajheti</h1>
+    <p>Developer | GitHub | Cloud Computing</p>
+  </header>
 
-  <h1>Sahil Rajheti</h1>
-  <h3>Writer | Digital Creator | Entrepreneur</h3>
+  <img src="sahil-rajheti-profile.jpg" alt="Sahil Rajheti" class="profile" />
 
-  <div class="info">
-    <p><strong>📧 Email:</strong> <a href="mailto:sahilkhan701766@gmail.com">sahilkhan701766@gmail.com</a></p>
-    <p><strong>📷 Instagram:</strong> <a href="https://instagram.com/soulverse_by_sahil" target="_blank">@soulverse_by_sahil</a></p>
-    <p><strong>💼 Projects:</strong></p>
-    <ul style="text-align: left;">
-      <li>🔹 The Book of Lucifer – Hindi/English poetic eBook</li>
-      <li>🔹 Shopify AI Toolkit – Guide for beginners</li>
-      <li>🔹 Instagram Reels Growth Toolkit</li>
-      <li>🔹 HustleCraft – T-shirt Brand (Startup)</li>
+  <section>
+    <h2>About Me</h2>
+    <p>I’m Sahil Rajheti, a passionate developer working with GitHub, cloud computing, and full-stack technologies. I love building digital products, sharing knowledge, and creating modern web experiences.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>GitHub & Git</li>
+      <li>Python & Data Analytics</li>
+      <li>Cloud Platforms (AWS basics)</li>
+      <li>Responsive Web Design</li>
     </ul>
-    <p><strong>🌍 Portfolio Link:</strong> <a href="https://sahilkhan701766.github.io">sahilkhan701766.github.io</a></p>
-  </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>My Portfolio Website</h3>
+      <p>A fully responsive portfolio hosted on GitHub Pages. Features About, Skills, Projects, and Contact sections.</p>
+    </div>
+    <!-- Add more projects here -->
+  </section>
+
+  <section>
+    <h2>Blog</h2>
+    <div class="blog">
+      <h3>Coming Soon!</h3>
+      <p>I’ll soon start sharing my tech journey, tips, and tutorials right here.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sahilkhan701766@gmail.com">sahilkhan701766@gmail.com</a></p>
+    <div class="social">
+      <a href="https://in.linkedin.com/in/sahil-rajheti-46853029b" target="_blank">LinkedIn</a> |
+      <a href="https://x.com/Sahil_Rajheti/status/1912075559418331180" target="_blank">Twitter</a> |
+      <a href="https://t.me/sahil_rajheti" target="_blank">Telegram</a> |
+      <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+  </section>
 
 </body>
 </html>
