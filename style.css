@@ -1,63 +1,60 @@
-/* Reset and base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background: #f8f9fa;
+  background: #f7f7f7;
   color: #333;
-  scroll-behavior: smooth;
-  padding: 20px;
+  line-height: 1.6;
+  padding-bottom: 50px;
 }
 
-/* Header */
 header {
-  text-align: center;
-  background-color: #111;
+  background: #333;
   color: #fff;
-  padding: 50px 20px;
-  animation: fadeIn 1.5s ease-in-out;
+  padding: 20px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header h1 {
-  font-size: 2.5rem;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header p {
-  font-size: 1.2rem;
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-/* Sections */
-section {
-  margin: 50px auto;
-  max-width: 900px;
-  animation: slideUp 1.5s ease;
-}
-
-section img {
-  max-width: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 20px auto;
-}
-
-/* Lists */
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  text-align: center;
-}
-
-ul li {
-  padding: 10px;
+.navbar li a {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
 }
 
-/* Links */
+section {
+  padding: 60px 10%;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
 a {
   color: #007bff;
   text-decoration: none;
@@ -67,33 +64,18 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+.project-card, .course-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 footer {
+  background: #333;
+  color: white;
   text-align: center;
-  padding: 30px;
-  background: #111;
-  color: #fff;
-  margin-top: 50px;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  0% { opacity: 0; transform: scale(0.95); }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-@keyframes slideUp {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  section {
-    padding: 10px;
-  }
+  padding: 20px;
+  position: relative;
 }
