@@ -1,89 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sahil Rajheti | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sahil Rajheti — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <h1>Sahil Rajheti</h1>
-      <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Sahil Rajheti</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+    </div>
   </header>
 
-  <!-- Home Section -->
-  <section id="home">
-    <h2>Welcome 👋</h2>
-    <p>I’m Sahil Rajheti, an AI & Web Developer passionate about creating powerful tools and sharing knowledge with students.</p>
-  </section>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-left reveal">
+        <img src="images/profile.png" alt="Sahil profile" class="profile-photo">
+      </div>
+      <div class="hero-right reveal">
+        <h1>Hi, I'm <span class="accent">Sahil</span></h1>
+        <p>Web developer • Content creator • Learner. I build responsive websites, small web apps and create easy-to-follow guides.</p>
+        <p class="cta-row">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn btn-outline" href="blog.html">Read Blog</a>
+        </p>
+      </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I specialize in building AI-based apps and educational tools. My goal is to make learning easier for everyone using technology.</p>
-  </section>
+    <section id="about" class="container about reveal">
+      <h2>About Me</h2>
+      <p>I'm Sahil — building portfolio websites, simple apps and online courses. This template is ready for GitHub Pages.</p>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>💻 HTML, CSS, JavaScript</li>
-      <li>🤖 Python & AI APIs</li>
-      <li>📱 Responsive Design</li>
-      <li>🌐 GitHub, Hosting, SEO</li>
-    </ul>
-  </section>
+    <section id="skills" class="container skills">
+      <h2 class="reveal">Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card reveal">HTML & CSS</div>
+        <div class="skill-card reveal">JavaScript</div>
+        <div class="skill-card reveal">Responsive Design</div>
+        <div class="skill-card reveal">Git & GitHub</div>
+      </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>AIChatBubble</h3>
-      <p>An AI chatbot app built using OpenAI API & HTML/JS</p>
-      <a href="https://github.com/sahilrajheti/AIChatBubble" target="_blank">🔗 View on GitHub</a>
+    <section class="container latest reveal">
+      <h2>Latest Project</h2>
+      <div class="project-preview">
+        <img src="images/project1.png" alt="Project preview">
+        <div>
+          <h3>Sample Project</h3>
+          <p>Small project demo with modern layout. Replace this card with your real projects.</p>
+          <a class="btn" href="projects.html">See all projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact reveal">
+      <h2>Contact</h2>
+      <p>If you'd like to work together or say hi, email me at <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Sahil Rajheti · <a href="https://sahilrajheti.github.io">sahilrajheti.github.io</a></p>
     </div>
-  </section>
-
-  <!-- Courses Section -->
-  <section id="courses">
-    <h2>📘 Free Courses</h2>
-
-    <div class="course-card">
-      <h3>AI Basics PDF (Free)</h3>
-      <p>Learn Artificial Intelligence from scratch using this free PDF.</p>
-      <a href="pdfs/ai-basics.pdf" target="_blank">📥 Download PDF</a>
-    </div>
-
-    <div class="course-card">
-      <h3>Coming Soon: ChatGPT App PDF</h3>
-      <p>Full tutorial on building a ChatGPT-style app.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:sahil@example.com">sahil@example.com</a></p>
-    <p>Telegram: <a href="https://t.me/sahilrajheti" target="_blank">@sahilrajheti</a></p>
-    <p>Instagram: <a href="https://instagram.com/sahilrajheti" target="_blank">@sahilrajheti</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Sahil Rajheti. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
