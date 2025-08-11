@@ -1,0 +1,14 @@
+# GitHub Sponsors - shows the community how to support this project
+# Replace the usernames/links below with your real info
+
+github: sahilrajheti        # Your GitHub username (if you enable GitHub Sponsors)
+patreon: ""                 # Your Patreon username (leave empty if not using)
+open_collective: ""         # Your OpenCollective name (leave empty if not using)
+ko_fi: ""                   # Your Ko-fi username (leave empty if not using)
+
+# Custom funding links (multiple allowed)
+custom:
+  - "upi://pay?pa=7078297357-3@ybl&pn=Sahil%20Rajheti&cu=INR"       # UPI Payment link
+  - "https://www.paypal.me/YourPayPalLink"                         # PayPal link
+  - "https://buymeacoffee.com/YourPage"                            # Buy Me a Coffee link
+  - "https://yourwebsite.com/donate"                               # Your own donate page
