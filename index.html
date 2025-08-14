@@ -1,228 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sahil Rajheti | Portfolio</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Rajheti - Portfolio</title>
 
-<style>
-    :root {
-        --bg-color: #ffffff;
-        --text-color: #333;
-        --section-bg: #f9f9f9;
-        --link-color: #ff9800;
-    }
-    body.dark {
-        --bg-color: #121212;
-        --text-color: #f0f0f0;
-        --section-bg: #1e1e1e;
-        --link-color: #ffb84d;
-    }
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: var(--bg-color);
-        color: var(--text-color);
-        scroll-behavior: smooth;
-        transition: background 0.3s, color 0.3s;
-    }
-    nav {
-        position: fixed;
-        width: 100%;
-        background: var(--bg-color);
-        border-bottom: 1px solid #ccc;
-        padding: 10px 0;
-        z-index: 1000;
-        top: 0;
-    }
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-    }
-    nav ul li {
-        margin: 0 15px;
-    }
-    nav ul li a {
-        color: var(--text-color);
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-    nav ul li a:hover {
-        color: var(--link-color);
-    }
-    .dark-toggle {
-        position: fixed;
-        right: 20px;
-        top: 15px;
-        cursor: pointer;
-        background: var(--link-color);
-        color: white;
-        border: none;
-        padding: 8px 12px;
-        border-radius: 5px;
-    }
-    /* Hero Section */
-    #hero {
-        padding: 120px 20px 80px;
-        text-align: center;
-        background: var(--section-bg);
-    }
-    #hero img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 4px solid var(--link-color);
-        margin-bottom: 15px;
-    }
-    #hero h1 {
-        margin: 10px 0;
-        font-size: 32px;
-    }
-    #hero p {
-        font-size: 18px;
-        color: var(--text-color);
-    }
-    .social-links a {
-        color: var(--link-color);
-        margin: 0 8px;
-        font-size: 20px;
-        transition: 0.3s;
-    }
-    .social-links a:hover {
-        opacity: 0.7;
-    }
-    /* Sections */
-    section {
-        padding: 80px 20px;
-        min-height: 300px;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 1s ease, transform 1s ease;
-    }
-    section.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    h2 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    ul, p {
-        max-width: 800px;
-        margin: auto;
-        font-size: 16px;
-        line-height: 1.6;
-    }
-</style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #222;
+            --accent-color: #0077ff;
+            --section-bg: #f7f9fc;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--accent-color);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px;
+            background: #eee;
+        }
+
+        nav a {
+            color: var(--text-color);
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* About Section */
+        #about p {
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+
+        /* Skills Section */
+        .skill-bar {
+            background: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .skill-bar div {
+            height: 12px;
+            border-radius: 20px;
+            width: 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!-- Dark Mode Button -->
-<button class="dark-toggle" onclick="document.body.classList.toggle('dark')">🌙</button>
+    <!-- HEADER -->
+    <header>
+        <h1>Sahil Rajheti</h1>
+        <p>AI Chatbot Developer | Web Designer | Business Automation Specialist</p>
+    </header>
 
-<!-- Navigation -->
-<nav>
-    <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#personal-info">Info</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#skills">Skills</a></li>
-    </ul>
-</nav>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<!-- Hero Section -->
-<section id="hero">
-    <img src="your-photo.jpg" alt="Sahil Rajheti">
-    <h1>Sahil Rajheti</h1>
-    <p>Tech Enthusiast | Web Developer | AI Bot Creator</p>
-    <div class="social-links">
-        <a href="mailto:sahilkhan701766@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://t.me" target="_blank"><i class="fab fa-telegram"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-    </div>
-</section>
+    <!-- ABOUT ME -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p><strong>Sahil Rajheti</strong> is a technology enthusiast and problem-solver specializing in <strong>AI chatbot development, modern web design, and business automation solutions</strong>. With a deep understanding of <strong>OpenAI API integration, responsive UI/UX, and digital process optimization</strong>, he creates tools that save time, enhance efficiency, and improve customer engagement for businesses.</p>
+        <p>He has experience working with <strong>HTML, CSS, JavaScript, GitHub Pages, and AI-driven systems</strong>, enabling him to deliver end-to-end solutions from concept to deployment. Beyond technical expertise, Sahil focuses on <strong>innovative problem-solving</strong> and <strong>future-ready digital transformation</strong> strategies.</p>
+        <p>Passionate about technology and learning, he continuously upgrades his skills to stay ahead in the rapidly evolving digital world. His mission is simple — to <strong>build intelligent, efficient, and user-friendly digital experiences</strong> that create real impact.</p>
+    </section>
 
-<!-- About Me -->
-<section id="about" style="background:var(--section-bg);">
-    <h2>About Me</h2>
-    <p>
-        Hi, I’m <strong>Sahil Rajheti</strong>, a tech enthusiast and creator from India. 
-        I specialize in building responsive websites, AI chatbots, and automation tools 
-        that save time and boost productivity. I also love creating educational content, 
-        from biology courses to guides on earning money online.
-    </p>
-</section>
+    <!-- SKILLS -->
+    <section id="skills" style="background: var(--section-bg);">
+        <h2>Skills & Tools</h2>
 
-<!-- Personal Info -->
-<section id="personal-info">
-    <h2>Personal Info</h2>
-    <ul>
-        <li><strong>Full Name:</strong> Sahil Rajheti</li>
-        <li><strong>Email:</strong> <a href="mailto:sahilkhan701766@gmail.com">sahilkhan701766@gmail.com</a></li>
-        <li><strong>Device:</strong> iPhone 14 Pro</li>
-        <li><strong>Country:</strong> India</li>
-        <li><strong>GitHub:</strong> <a href="https://sahilrajheti.github.io/SahilRajheti" target="_blank">sahilrajheti.github.io/SahilRajheti</a></li>
-    </ul>
-</section>
+        <h3>Web Development</h3>
+        <p>HTML</p>
+        <div class="skill-bar" data-percent="95"><div style="background:#e34c26;"></div></div>
+        <p>CSS</p>
+        <div class="skill-bar" data-percent="90"><div style="background:#264de4;"></div></div>
+        <p>JavaScript</p>
+        <div class="skill-bar" data-percent="85"><div style="background:#f0db4f;"></div></div>
+        <p>GitHub Pages</p>
+        <div class="skill-bar" data-percent="90"><div style="background:#333;"></div></div>
 
-<!-- Projects -->
-<section id="projects" style="background:var(--section-bg);">
-    <h2>Projects & Goals</h2>
-    <ul>
-        <li>Personal Portfolio Website with blog, projects, animations, and mobile responsiveness.</li>
-        <li>AI Chatbot like ChatGPT with OpenAI integration (HTML + JS) and possible APK version.</li>
-        <li>“How to Earn Money Online” course (Scribd-style PDF format).</li>
-        <li>Class 10th Biology NCERT course with top board exam questions, 5 answer types, Hindi & English explanations, and memory tricks.</li>
-        <li>Business plan to offer AI assistants/chatbots to new shopkeepers to save their time.</li>
-    </ul>
-</section>
+        <h3>AI & Automation</h3>
+        <p>OpenAI API Integration</p>
+        <div class="skill-bar" data-percent="85"><div style="background:#ff9800;"></div></div>
+        <p>Chatbot Development</p>
+        <div class="skill-bar" data-percent="88"><div style="background:#607d8b;"></div></div>
 
-<!-- Interests -->
-<section id="interests">
-    <h2>Interests</h2>
-    <p>
-        I’m passionate about website design, automation tools, education content creation, AI integrations, 
-        GPS-based car tracking, and developing solutions that improve business productivity.
-    </p>
-</section>
+        <h3>Tools</h3>
+        <p>Excel & Google Sheets</p>
+        <div class="skill-bar" data-percent="85"><div style="background:#4CAF50;"></div></div>
+        <p>PDF Course Creation</p>
+        <div class="skill-bar" data-percent="80"><div style="background:#d32f2f;"></div></div>
 
-<!-- Skills -->
-<section id="skills" style="background:var(--section-bg);">
-    <h2>Skills & Tools</h2>
-    <ul>
-        <li>HTML / CSS / JavaScript</li>
-        <li>GitHub Pages</li>
-        <li>OpenAI API Integration</li>
-        <li>Excel & Google Sheets (lead tracking, conditional formatting, dropdowns)</li>
-        <li>Social Media Outreach for Business</li>
-    </ul>
-</section>
+        <h3>Business Skills</h3>
+        <p>Social Media Outreach</p>
+        <div class="skill-bar" data-percent="88"><div style="background:#9c27b0;"></div></div>
+        <p>Business Automation</p>
+        <div class="skill-bar" data-percent="83"><div style="background:#ffc107;"></div></div>
+    </section>
 
-<script>
-    // Reveal on scroll
-    function revealSections() {
-        const sections = document.querySelectorAll("section");
-        const triggerBottom = window.innerHeight * 0.85;
-        sections.forEach(section => {
-            const sectionTop = section.getBoundingClientRect().top;
-            if (sectionTop < triggerBottom) {
-                section.classList.add("visible");
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sahilkhan701766@gmail.com">sahilkhan701766@gmail.com</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/sahilrajheti</a></p>
+        <p>GitHub: <a href="#">github.com/sahilrajheti</a></p>
+        <p>Telegram: <a href="#">t.me/sahilrajheti</a></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Sahil Rajheti. All rights reserved.
+    </footer>
+
+    <!-- SKILL ANIMATION SCRIPT -->
+    <script>
+        function animateSkills() {
+            document.querySelectorAll('.skill-bar').forEach(bar => {
+                const percent = bar.getAttribute('data-percent');
+                const fill = bar.querySelector('div');
+                fill.style.transition = "width 1.5s ease-in-out";
+                fill.style.width = percent + "%";
+            });
+        }
+
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top < window.innerHeight && rect.bottom >= 0;
+        }
+
+        window.addEventListener('scroll', function() {
+            const skillsSection = document.getElementById('skills');
+            if (isInViewport(skillsSection)) {
+                animateSkills();
             }
         });
-    }
-    window.addEventListener("scroll", revealSections);
-    window.addEventListener("load", revealSections);
-</script>
-
+    </script>
 </body>
 </html>
