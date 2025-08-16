@@ -1,24 +1,22 @@
-<html>
- <head>  
- </head> 
- <body> 
-  <meta charset="UTF-8"> 
-  <meta charset="UTF-8"> 
-  <title>My Website</title> 
-  <!-- Google Analytics --> 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ABC123XYZ"></script> 
-  <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="VRDHJirnTwBLG5qyG2_Hy2Cy6S9VStxiX6SGujHsWvY" />
+<title>Sahil Rajheti - AI Portfolio</title>
 
-      gtag('config', 'G-ABC123XYZ');
-    </script> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="google-site-verification" content="VRDHJirnTwBLG5qyG2_Hy2Cy6S9VStxiX6SGujHsWvY"> 
-  <title>Sahil Rajheti - AI Portfolio</title> 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;family=Orbitron:wght@500;700&amp;display=swap" rel="stylesheet"> 
-  <style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNQCZWXZQX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PNQCZWXZQX');
+</script> 
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+<style>
 /* ====== Global ====== */
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
 body{font-family:'Roboto',sans-serif;background:#0d0d0d;color:#fff;line-height:1.6;transition:0.3s;overflow-x:hidden;}
@@ -108,219 +106,245 @@ body.light-mode a{color:#00b8b8;}
   #about{flex-direction:column;}
   #chatbot-iframe{width:90%;height:400px;right:5%;}
 }
-</style> 
-  <!-- Particle Canvas --> 
-  <canvas id="particles"></canvas> 
-  <!-- Navbar --> 
-  <nav> 
-   <div class="logo">
-     SahilRajheti 
-   </div> 
-   <ul> 
-    <li><a href="#hero">Home</a></li> 
-    <li><a href="#about">About</a></li> 
-    <li><a href="#skills">Skills</a></li> 
-    <li><a href="#projects">Projects</a></li> 
-    <li><a href="#blog">Blog</a></li> 
-    <li><a href="#contact">Contact</a></li> 
-    <li><a href="#" id="theme-toggle">🌙</a></li> 
-   </ul> 
-  </nav> 
-  <!-- Hero --> 
-  <section id="hero"> 
-   <h1>Hello, I'm Sahil Rajheti</h1> 
-   <p>AI Enthusiast | Web Developer | Problem Solver</p> 
-   <button class="btn">Explore My Work</button> 
-  </section> 
-  <!-- About --> 
-  <section id="about" class="container reveal"> 
-   <img src="https://via.placeholder.com/300" alt="Sahil Rajheti"> 
-   <div class="content"> 
-    <h2>About Me</h2> 
-    <p>Hello! I am Sahil Rajheti, a passionate web developer and AI enthusiast. I love creating intelligent and interactive web solutions that solve real-world problems. My goal is to merge technology and creativity seamlessly.</p> 
-    <p>I specialize in AI integrations, responsive web design, and smooth user experiences. Let's build something amazing together!</p> 
-   </div> 
-  </section> 
-  <!-- Skills --> 
-  <section id="skills" class="container reveal"> 
-   <h2>My Skills</h2> 
-   <div class="skill"> 
-    <span>HTML &amp; CSS</span> 
-    <div class="skill-bar"> 
-     <span style="width:90%"></span> 
-    </div> 
-   </div> 
-   <div class="skill"> 
-    <span>JavaScript</span> 
-    <div class="skill-bar"> 
-     <span style="width:85%"></span> 
-    </div> 
-   </div> 
-   <div class="skill"> 
-    <span>AI &amp; Machine Learning</span> 
-    <div class="skill-bar"> 
-     <span style="width:75%"></span> 
-    </div> 
-   </div> 
-   <div class="skill"> 
-    <span>React &amp; Web3</span> 
-    <div class="skill-bar"> 
-     <span style="width:70%"></span> 
-    </div> 
-   </div> 
-  </section> 
-  <!-- Projects --> 
-  <section id="projects" class="container reveal"> 
-   <h2>Projects</h2> 
-   <div class="cards"> 
-    <div class="card" data-title="AI Chatbot" data-desc="Integrated AI chatbot for website user interaction using OpenAI API." data-link="#"> 
-     <h3>AI Chatbot</h3> 
-     <p>Click to view details</p> 
-    </div> 
-    <div class="card" data-title="Portfolio Website" data-desc="Fully responsive AI-themed personal portfolio website with animations." data-link="#"> 
-     <h3>Portfolio Website</h3> 
-     <p>Click to view details</p> 
-    </div> 
-    <div class="card" data-title="Car Tracking App" data-desc="Real-time GPS tracking app with AI-powered analytics for vehicles." data-link="#"> 
-     <h3>Car Tracking App</h3> 
-     <p>Click to view details</p> 
-    </div> 
-   </div> 
-  </section> 
-  <!-- Blog --> 
-  <section id="blog" class="container reveal"> 
-   <h2>Blog</h2> 
-   <div class="cards"> 
-    <div class="card"> 
-     <h3>How AI is Shaping the Web</h3> 
-     <p>Learn how AI is transforming websites.</p> 
-     <a href="#">Read More</a> 
-    </div> 
-    <div class="card"> 
-     <h3>Top 5 Web Dev Tools</h3> 
-     <p>Discover the most powerful tools for modern web development.</p> 
-     <a href="#">Read More</a> 
-    </div> 
-   </div> 
-  </section> 
-  <!-- Contact --> 
-  <section id="contact" class="container reveal"> 
-   <h2>Contact Me</h2> 
-   <form> 
-    <input type="text" placeholder="Your Name" required> 
-    <input type="email" placeholder="Your Email" required> 
-    <textarea placeholder="Your Message" rows="5" required></textarea> 
-    <button type="submit">Send Message</button> 
-   </form> 
-  </section> 
-  <!-- Footer --> 
-  <footer> 
-   <p>© 2025 Sahil Rajheti | <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">GitHub</a> </p> 
-  </footer> 
-  <!-- Project Modal --> 
-  <div class="modal" id="project-modal"> 
-   <div class="modal-content"> 
-    <span class="modal-close">×</span> 
-    <h2 id="modal-title"></h2> 
-    <p id="modal-desc"></p> 
-    <a id="modal-link" href="#" target="_blank">Visit Project</a> 
-   </div> 
-  </div> 
-  <!-- AI Chatbot --> 
-  <button id="chatbot-btn">💬</button> 
-  <iframe id="chatbot-iframe" src="https://chatbase.co/chatbot-iframe/VnuQo_giaOsnnKY-_z_lS"></iframe> 
-  <!-- JavaScript --> 
-  <script>
-// Dark/Light Mode
-const toggleBtn=document.getElementById('theme-toggle');
-toggleBtn.addEventListener('click',()=>{
+</style>
+</head>
+<body>
+
+<!-- Particle Canvas -->
+<canvas id="particles"></canvas>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo">SahilRajheti</div>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#" id="theme-toggle">🌙</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <h1>Hello, I'm Sahil Rajheti</h1>
+  <p>AI Enthusiast | Web Developer | Problem Solver</p>
+  <button class="btn">Explore My Work</button>
+</section>
+
+<!-- About -->
+<section id="about" class="container reveal">
+  <img src="https://via.placeholder.com/300" alt="Sahil Rajheti">
+  <div class="content">
+    <h2>About Me</h2>
+    <p>Hello! I am Sahil Rajheti, a passionate web developer and AI enthusiast. I love creating intelligent and interactive web solutions that solve real-world problems. My goal is to merge technology and creativity seamlessly.</p>
+    <p>I specialize in AI integrations, responsive web design, and smooth user experiences. Let's build something amazing together!</p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="container reveal">
+  <h2>My Skills</h2>
+  <div class="skill"><span>HTML & CSS</span><div class="skill-bar"><span style="width:90%"></span></div></div>
+  <div class="skill"><span>JavaScript</span><div class="skill-bar"><span style="width:85%"></span></div></div>
+  <div class="skill"><span>AI & Machine Learning</span><div class="skill-bar"><span style="width:75%"></span></div></div>
+  <div class="skill"><span>React & Web3</span><div class="skill-bar"><span style="width:70%"></span></div></div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="container reveal">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card" data-title="AI Chatbot" data-desc="Integrated AI chatbot for website user interaction using OpenAI API." data-link="#">
+      <h3>AI Chatbot</h3>
+      <p>Click to view details</p>
+    </div>
+    <div class="card" data-title="Portfolio Website" data-desc="Fully responsive AI-themed personal portfolio website with animations." data-link="#">
+      <h3>Portfolio Website</h3>
+      <p>Click to view details</p>
+    </div>
+    <div class="card" data-title="Car Tracking App" data-desc="Real-time GPS tracking app with AI-powered analytics for vehicles." data-link="#">
+      <h3>Car Tracking App</h3>
+      <p>Click to view details</p>
+    </div>
+  </div>
+</section>
+
+<!-- Blog -->
+<section id="blog" class="container reveal">
+  <h2>Blog</h2>
+  <div class="cards">
+    <div class="card"><h3>How AI is Shaping the Web</h3><p>Learn how AI is transforming websites.</p><a href="#">Read More</a></div>
+    <div class="card"><h3>Top 5 Web Dev Tools</h3><p>Discover the most powerful tools for modern web development.</p><a href="#">Read More</a></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container reveal">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Sahil Rajheti | 
+    <a href="#">LinkedIn</a> | 
+    <a href="#">Twitter</a> | 
+    <a href="#">GitHub</a>
+  </p>
+</footer>
+
+<!-- Project Modal -->
+<div class="modal" id="project-modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+    <a id="modal-link" href="#" target="_blank">Visit Project</a>
+  </div>
+</div>
+
+<!-- AI Chatbot -->
+<button id="chatbot-btn">💬</button>
+<iframe id="chatbot-iframe" src="https://chatbase.co/chatbot-iframe/VnuQo_giaOsnnKY-_z_lS"></iframe>
+
+<!-- Optimized JavaScript -->
+<script>
+// ===== Dark/Light Mode =====
+const toggleBtn = document.getElementById('theme-toggle');
+toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('light-mode');
-  toggleBtn.textContent=document.body.classList.contains('light-mode')?'🌞':'🌙';
+  toggleBtn.textContent = document.body.classList.contains('light-mode') ? '🌞' : '🌙';
 });
 
-// Scroll Reveal
-const revealElements=document.querySelectorAll('.reveal');
-window.addEventListener('scroll',()=>{
-  const triggerBottom=window.innerHeight/5*4;
-  revealElements.forEach(el=>{
-    const elTop=el.getBoundingClientRect().top;
-    if(elTop<triggerBottom) el.classList.add('active');
+// ===== Scroll-based Animations =====
+const revealElements = document.querySelectorAll('.reveal');
+const skillSpans = document.querySelectorAll('#skills .skill-bar span');
+window.addEventListener('scroll', () => {
+  const triggerBottom = window.innerHeight / 5 * 4;
+
+  // Reveal Elements
+  revealElements.forEach(el => {
+    const elTop = el.getBoundingClientRect().top;
+    if (elTop < triggerBottom) el.classList.add('active');
     else el.classList.remove('active');
   });
-});
 
-// Skills Animation
-const skillSpans=document.querySelectorAll('#skills .skill-bar span');
-window.addEventListener('scroll',()=>{
-  const skillsTop=document.getElementById('skills').offsetTop;
-  if(window.scrollY>skillsTop-window.innerHeight+100){
-    skillSpans.forEach(span=>{
-      span.style.width=span.style.width;
+  // Skills Animation
+  const skillsTop = document.getElementById('skills').offsetTop;
+  if (window.scrollY > skillsTop - window.innerHeight + 100) {
+    skillSpans.forEach(span => {
+      span.style.width = span.style.width; // preserves widths
     });
   }
 });
 
-// Project Modal
-const modal=document.getElementById('project-modal');
-const modalTitle=document.getElementById('modal-title');
-const modalDesc=document.getElementById('modal-desc');
-const modalLink=document.getElementById('modal-link');
-document.querySelectorAll('#projects .card').forEach(card=>{
-  card.addEventListener('click',()=>{
-    modal.style.display='flex';
-    modalTitle.textContent=card.dataset.title;
-    modalDesc.textContent=card.dataset.desc;
-    modalLink.href=card.dataset.link;
+// ===== Project Modal =====
+const modal = document.getElementById('project-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalDesc = document.getElementById('modal-desc');
+const modalLink = document.getElementById('modal-link');
+
+document.querySelectorAll('#projects .card').forEach(card => {
+  card.addEventListener('click', () => {
+    modal.style.display = 'flex';
+    modalTitle.textContent = card.dataset.title;
+    modalDesc.textContent = card.dataset.desc;
+    modalLink.href = card.dataset.link;
   });
 });
-document.querySelector('.modal-close').addEventListener('click',()=>{modal.style.display='none';});
-window.addEventListener('click',e=>{if(e.target===modal) modal.style.display='none';});
 
-// Chatbot Toggle
-const chatbotBtn=document.getElementById('chatbot-btn');
-const chatbotFrame=document.getElementById('chatbot-iframe');
-chatbotBtn.addEventListener('click',()=>{chatbotFrame.style.display=chatbotFrame.style.display==='block'?'none':'block';});
+document.querySelector('.modal-close').addEventListener('click', () => { modal.style.display = 'none'; });
+window.addEventListener('click', e => { if (e.target === modal) modal.style.display = 'none'; });
+
+// ===== Chatbot Toggle =====
+const chatbotBtn = document.getElementById('chatbot-btn');
+const chatbotFrame = document.getElementById('chatbot-iframe');
+chatbotBtn.addEventListener('click', () => {
+  chatbotFrame.style.display = chatbotFrame.style.display === 'block' ? 'none' : 'block';
+});
 
 // ===== Particle Background =====
-const canvas=document.getElementById('particles');
-const ctx=canvas.getContext('2d');
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
 let particlesArray;
-canvas.width=window.innerWidth;
-canvas.height=window.innerHeight;
-const mouse={x:null,y:null,radius:100};
-window.addEventListener('mousemove',function(event){mouse.x=event.x;mouse.y=event.y;});
-window.addEventListener('resize',function(){canvas.width=window.innerWidth;canvas.height=window.innerHeight;initParticles();});
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-class Particle{
-  constructor(x,y,directionX,directionY,size,color){this.x=x;this.y=y;this.directionX=directionX;this.directionY=directionY;this.size=size;this.color=color;}
-  draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.size,0,Math.PI*2,false);ctx.fillStyle=this.color;ctx.fill();}
-  update(){
-    if(this.x+this.size>canvas.width||this.x-this.size<0){this.directionX=-this.directionX;}
-    if(this.y+this.size>canvas.height||this.y-this.size<0){this.directionY=-this.directionY;}
-    this.x+=this.directionX;this.y+=this.directionY;
-    let dx=mouse.x-this.x;let dy=mouse.y-this.y;let distance=Math.sqrt(dx*dx+dy*dy);
-    if(distance<mouse.radius){
-      if(mouse.x<this.x&&this.x<canvas.width-this.size*10){this.x+=5;}
-      if(mouse.x>this.x&&this.x>this.size*10){this.x-=5;}
-      if(mouse.y<this.y&&this.y<canvas.height-this.size*10){this.y+=5;}
-      if(mouse.y>this.y&&this.y>this.size*10){this.y-=5;}
+const mouse = { x: null, y: null, radius: 100 };
+window.addEventListener('mousemove', e => { mouse.x = e.x; mouse.y = e.y; });
+window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; initParticles(); });
+
+class Particle {
+  constructor(x, y, dx, dy, size, color) { this.x = x; this.y = y; this.directionX = dx; this.directionY = dy; this.size = size; this.color = color; }
+  draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fillStyle = this.color; ctx.fill(); }
+  update() {
+    if (this.x + this.size > canvas.width || this.x - this.size < 0) this.directionX = -this.directionX;
+    if (this.y + this.size > canvas.height || this.y - this.size < 0) this.directionY = -this.directionY;
+    this.x += this.directionX; this.y += this.directionY;
+
+    const dx = mouse.x - this.x;
+    const dy = mouse.y - this.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+    if (distance < mouse.radius) {
+      if (mouse.x < this.x && this.x < canvas.width - this.size * 10) this.x += 5;
+      if (mouse.x > this.x && this.x > this.size * 10) this.x -= 5;
+      if (mouse.y < this.y && this.y < canvas.height - this.size * 10) this.y += 5;
+      if (mouse.y > this.y && this.y > this.size * 10) this.y -= 5;
     }
     this.draw();
   }
 }
 
-function initParticles(){particlesArray=[];let numberOfParticles=(canvas.width*canvas.height)/8000;
-for(let i=0;i<numberOfParticles;i++){let size=(Math.random()*3)+1;let x=Math.random()*(canvas.width-size*2)+size*2;let y=Math.random()*(canvas.height-size*2)+size*2;
-let directionX=(Math.random()*1)-0.5;let directionY=(Math.random()*1)-0.5;let color='#00ffff';particlesArray.push(new Particle(x,y,directionX,directionY,size,color));}}
+function initParticles() {
+  particlesArray = [];
+  const numberOfParticles = (canvas.width * canvas.height) / 8000;
+  for (let i = 0; i < numberOfParticles; i++) {
+    const size = Math.random() * 3 + 1;
+    const x = Math.random() * (canvas.width - size * 2) + size * 2;
+    const y = Math.random() * (canvas.height - size * 2) + size * 2;
+    const dx = Math.random() - 0.5;
+    const dy = Math.random() - 0.5;
+    particlesArray.push(new Particle(x, y, dx, dy, size, '#00ffff'));
+  }
+}
 
-function connect(){let opacityValue=1;
-for(let a=0;a<particlesArray.length;a++){for(let b=a;b<particlesArray.length;b++){
-let dx=particlesArray[a].x-particlesArray[b].x;let dy=particlesArray[a].y-particlesArray[b].y;let distance=Math.sqrt(dx*dx+dy*dy);
-if(distance<120){opacityValue=1-(distance/120);ctx.strokeStyle='rgba(0,255,255,'+opacityValue+')';ctx.lineWidth=1;ctx.beginPath();
-ctx.moveTo(particlesArray[a].x,particlesArray[a].y);ctx.lineTo(particlesArray[b].x,particlesArray[b].y);ctx.stroke();}}}}
+function connectParticles() {
+  for (let a = 0; a < particlesArray.length; a++) {
+    for (let b = a; b < particlesArray.length; b++) {
+      const dx = particlesArray[a].x - particlesArray[b].x;
+      const dy = particlesArray[a].y - particlesArray[b].y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      if (distance < 120) {
+        const opacity = 1 - distance / 120;
+        ctx.strokeStyle = `rgba(0,255,255,${opacity})`;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+        ctx.stroke();
+      }
+    }
+  }
+}
 
-function animateParticles(){requestAnimationFrame(animateParticles);ctx.clearRect(0,0,canvas.width,canvas.height);particlesArray.forEach(p=>p.update());connect();}
-initParticles();animateParticles();
-</script>   
- </body>
+function animateParticles() {
+  requestAnimationFrame(animateParticles);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particlesArray.forEach(p => p.update());
+  connectParticles();
+}
+
+initParticles();
+animateParticles();
+</script>
+
+</body>
 </html>
