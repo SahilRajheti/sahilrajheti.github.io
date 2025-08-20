@@ -70,17 +70,43 @@
         #skills .skill-bar span{display:block;height:100%;width:0;background:#00ffff;border-radius:10px;transition:1s;}
 
         /* ===== Projects ===== */
-        #projects .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-        #projects .card{background:#1a1a1a;padding:20px;border-radius:15px;transition:0.3s;cursor:pointer;}
-        #projects .card:hover{transform:translateY(-10px);box-shadow:0 10px 20px rgba(0,255,255,0.2);}
-        #projects .card h3{margin-bottom:10px;color:#00ffff;}
-        #projects .project-details{display:none;padding:20px;background:#111;border-radius:15px;margin-top:20px;}
-        #projects .project-details.active{display:block;}
-        #project-star-rating .star{font-size:1.5rem;color:#555;cursor:pointer;}
-        #project-star-rating .star.active{color:#00ffff;}
-        #project-rating-bar{width:100%;height:10px;background:#333;border-radius:5px;overflow:hidden;margin-top:10px;}
-        #project-rating-bar span{display:block;height:100%;width:0;background:#00ffff;border-radius:5px;}
+       <!-- Projects Section -->
+<section id="projects" class="container reveal">
+    <h2>My Projects</h2>
+    <div class="cards">
+        <!-- Project 1 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="AI Chatbot">
+            <h3>AI Chatbot</h3>
+            <p>An intelligent chatbot built with AI integration to answer queries in real-time.</p>
+            <a href="https://github.com/sahilrajheti/ai-chatbot" target="_blank" class="btn">View Project</a>
+        </div>
 
+        <!-- Project 2 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Portfolio Website">
+            <h3>Portfolio Website</h3>
+            <p>A modern responsive personal portfolio built with HTML, CSS, and JS.</p>
+            <a href="https://github.com/sahilrajheti/portfolio-website" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="AI Image Generator">
+            <h3>AI Image Generator</h3>
+            <p>Generates AI images based on user prompts using machine learning models.</p>
+            <a href="https://github.com/sahilrajheti/ai-image-generator" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Web3 Dashboard">
+            <h3>Web3 Dashboard</h3>
+            <p>A blockchain dashboard that tracks crypto wallets, transactions, and NFTs.</p>
+            <a href="https://github.com/sahilrajheti/web3-dashboard" target="_blank" class="btn">View Project</a>
+        </div>
+    </div>
+</section>
         /* ===== Blog ===== */
         #blog .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
         #blog .card{background:#1a1a1a;padding:20px;border-radius:15px;transition:0.3s;}
@@ -125,7 +151,43 @@
             #chatbot-iframe{width:90%;height:400px;right:5%;}
             #projects .project-details{width:95%;padding:20px;}
         }
-    </style>
+    </style><!-- Projects Section -->
+<section id="projects" class="container reveal">
+    <h2>My Projects</h2>
+    <div class="cards">
+        <!-- Project 1 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="AI Chatbot">
+            <h3>AI Chatbot</h3>
+            <p>An intelligent chatbot built with AI integration to answer queries in real-time.</p>
+            <a href="https://github.com/sahilrajheti/ai-chatbot" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Portfolio Website">
+            <h3>Portfolio Website</h3>
+            <p>A modern responsive personal portfolio built with HTML, CSS, and JS.</p>
+            <a href="https://github.com/sahilrajheti/portfolio-website" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="AI Image Generator">
+            <h3>AI Image Generator</h3>
+            <p>Generates AI images based on user prompts using machine learning models.</p>
+            <a href="https://github.com/sahilrajheti/ai-image-generator" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Web3 Dashboard">
+            <h3>Web3 Dashboard</h3>
+            <p>A blockchain dashboard that tracks crypto wallets, transactions, and NFTs.</p>
+            <a href="https://github.com/sahilrajheti/web3-dashboard" target="_blank" class="btn">View Project</a>
+        </div>
+    </div>
+</section>
 </head>
 <body>
     <!-- Particle Canvas -->
