@@ -1,484 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="VRDHJirnTwBLG5qyG2_Hy2Cy6S9VStxiX6SGujHsWvY" />
-    <title>Sahil Rajheti - AI Portfolio</title>
+<!-- Courses Section -->
+<section id="courses" class="py-16">
+  <div class="container mx-auto px-6">
+    <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Featured Courses</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNQCZWXZQX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-PNQCZWXZQX');
-    </script> 
-
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-    <script>
-      const firebaseConfig = {
-        apiKey: "YOUR_API_KEY",
-        authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-        databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
-        projectId: "YOUR_PROJECT_ID",
-        storageBucket: "YOUR_PROJECT_ID.appspot.com",
-        messagingSenderId: "YOUR_MESSAGING_ID",
-        appId: "YOUR_APP_ID"
-      };
-      firebase.initializeApp(firebaseConfig);
-      const database = firebase.database();
-    </script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-    <style>
-        /* ===== Global ===== */
-        *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
-        body{font-family:'Roboto',sans-serif;background:#0d0d0d;color:#fff;line-height:1.6;transition:0.3s;overflow-x:hidden;}
-        a{text-decoration:none;color:inherit;}
-        img{max-width:100%;border-radius:10px;}
-        section{padding:80px 20px;position:relative;}
-        h1,h2,h3,h4,h5,h6{font-family:'Orbitron',sans-serif;margin-bottom:20px;}
-        .container{max-width:1200px;margin:0 auto;}
-
-        /* ===== Navbar ===== */
-        nav{position:fixed;width:100%;top:0;left:0;background:rgba(0,0,0,0.85);display:flex;justify-content:space-between;align-items:center;padding:15px 50px;z-index:100;transition:0.3s;}
-        nav .logo{font-size:1.5rem;font-weight:bold;color:#00ffff;}
-        nav ul{list-style:none;display:flex;gap:20px;}
-        nav ul li a{padding:5px 10px;transition:0.3s;border-radius:5px;}
-        nav ul li a:hover{background:#00ffff;color:#000;}
-
-        /* ===== Hero ===== */
-        #hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;height:100vh;background:linear-gradient(to right,#0f0c29,#302b63,#24243e);overflow:hidden;}
-        #hero h1{font-size:3rem;color:#00ffff;}
-        #hero p{font-size:1.2rem;margin-top:15px;color:#ccc;}
-        #hero .btn{margin-top:20px;padding:12px 30px;background:#00ffff;color:#000;border:none;border-radius:50px;font-weight:bold;cursor:pointer;transition:0.3s;}
-        #hero .btn:hover{background:#00b8b8;color:#fff;}
-
-        /* ===== About ===== */
-        #about{display:flex;flex-wrap:wrap;gap:40px;align-items:center;}
-        #about img{flex:1;max-width:300px;border-radius:50%;}
-        #about .content{flex:2;}
-        #about .content p{margin-bottom:15px;color:#ccc;}
-
-        /* ===== Skills ===== */
-        #skills .skill{margin-bottom:20px;}
-        #skills .skill span{display:block;font-weight:bold;margin-bottom:5px;}
-        #skills .skill-bar{width:100%;height:15px;background:#333;border-radius:10px;overflow:hidden;}
-        #skills .skill-bar span{display:block;height:100%;width:0;background:#00ffff;border-radius:10px;transition:1s;}
-
-        /* ===== Projects ===== */
-       <!-- Projects Section -->
-<section id="projects" class="container reveal">
-    <h2>My Projects</h2>
-    <div class="cards">
-        <!-- Project 1 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200" alt="AI Chatbot">
-            <h3>AI Chatbot</h3>
-            <p>An intelligent chatbot built with AI integration to answer queries in real-time.</p>
-            <a href="https://github.com/sahilrajheti/ai-chatbot" target="_blank" class="btn">View Project</a>
+      <!-- Course 1: Affiliate Marketing -->
+      <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+          <span class="text-6xl">💼</span>
         </div>
-
-        <!-- Project 2 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200" alt="Portfolio Website">
-            <h3>Portfolio Website</h3>
-            <p>A modern responsive personal portfolio built with HTML, CSS, and JS.</p>
-            <a href="https://github.com/sahilrajheti/portfolio-website" target="_blank" class="btn">View Project</a>
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2">Affiliate Marketing Mastery</h4>
+          <p class="text-gray-600 mb-4">Learn Affiliate Marketing from scratch and start earning passive income online.</p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-purple-600">₹499</span>
+            <span class="text-sm text-gray-500">10 hours • 30 lessons</span>
+          </div>
+          <button onclick="purchaseCourse('affiliate', 'Affiliate Marketing Mastery', 499)" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+            Buy Course
+          </button>
         </div>
+      </div>
 
-        <!-- Project 3 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200" alt="AI Image Generator">
-            <h3>AI Image Generator</h3>
-            <p>Generates AI images based on user prompts using machine learning models.</p>
-            <a href="https://github.com/sahilrajheti/ai-image-generator" target="_blank" class="btn">View Project</a>
+      <!-- Course 2: Learn ChatGPT -->
+      <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
+          <span class="text-6xl">🤖</span>
         </div>
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2">Learn ChatGPT</h4>
+          <p class="text-gray-600 mb-4">Master ChatGPT, AI prompts, and create your own AI tools with real-world projects.</p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-purple-600">₹499</span>
+            <span class="text-sm text-gray-500">8 hours • 25 lessons</span>
+          </div>
+          <button onclick="purchaseCourse('chatgpt', 'Learn ChatGPT', 499)" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+            Buy Course
+          </button>
+        </div>
+      </div>
 
-        <!-- Project 4 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200" alt="Web3 Dashboard">
-            <h3>Web3 Dashboard</h3>
-            <p>A blockchain dashboard that tracks crypto wallets, transactions, and NFTs.</p>
-            <a href="https://github.com/sahilrajheti/web3-dashboard" target="_blank" class="btn">View Project</a>
+      <!-- Course 3: Crypto Trading -->
+      <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
+          <span class="text-6xl">💹</span>
         </div>
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2">Crypto Trading Mastery</h4>
+          <p class="text-gray-600 mb-4">Step-by-step guide to trading Bitcoin, Ethereum & Altcoins with strategies and risk management.</p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-purple-600">₹499</span>
+            <span class="text-sm text-gray-500">12 hours • 40 lessons</span>
+          </div>
+          <button onclick="purchaseCourse('crypto', 'Crypto Trading Mastery', 499)" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+            Buy Course
+          </button>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
-        /* ===== Blog ===== */
-        #blog .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-        #blog .card{background:#1a1a1a;padding:20px;border-radius:15px;transition:0.3s;}
-        #blog .card:hover{transform:translateY(-10px);box-shadow:0 10px 20px rgba(0,255,255,0.2);}
-        #blog .card h3{margin-bottom:10px;color:#00ffff;}
-
-        /* ===== Contact ===== */
-        #contact form{max-width:600px;margin:auto;display:flex;flex-direction:column;gap:15px;}
-        #contact input,#contact textarea{padding:10px;border-radius:10px;border:none;}
-        #contact button{padding:12px;border:none;border-radius:50px;background:#00ffff;color:#000;font-weight:bold;cursor:pointer;transition:0.3s;}
-        #contact button:hover{background:#00b8b8;color:#fff;}
-
-        /* ===== Footer ===== */
-        footer{text-align:center;padding:30px 20px;background:#111;color:#ccc;}
-        footer a{color:#00ffff;margin:0 5px;}
-
-        /* ===== Dark Mode ===== */
-        body.light-mode{background:#f5f5f5;color:#111;}
-        body.light-mode nav{background:rgba(255,255,255,0.9);}
-        body.light-mode #hero{background:linear-gradient(to right,#a1c4fd,#c2e9fb,#f3f3f3);}
-        body.light-mode .card{background:#fff;color:#111;}
-        body.light-mode .project-details{background:#ddd;color:#111;}
-        body.light-mode #skills .skill-bar{background:#ccc;}
-        body.light-mode #skills .skill-bar span{background:#00b8b8;}
-        body.light-mode a{color:#00b8b8;}
-
-        /* ===== AI Chatbot Floating Button ===== */
-        #chatbot-btn{position:fixed;bottom:30px;right:30px;width:60px;height:60px;background:#00ffff;color:#000;border:none;border-radius:50%;cursor:pointer;font-size:1.5rem;z-index:150;display:flex;justify-content:center;align-items:center;box-shadow:0 5px 15px rgba(0,255,255,0.3);}
-        #chatbot-iframe{position:fixed;bottom:100px;right:30px;width:350px;height:500px;border:none;border-radius:15px;display:none;z-index:150;box-shadow:0 5px 20px rgba(0,255,255,0.4);}
-
-        /* ===== Particle Canvas ===== */
-        #particles{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;background:#0d0d0d;}
-
-        /* ===== Animations ===== */
-        .reveal{opacity:0;transform:translateY(50px);transition:all 0.8s ease;}
-        .reveal.active{opacity:1;transform:translateY(0);}
-
-        /* ===== Responsive ===== */
-        @media(max-width:768px){
-            nav{padding:15px 20px;}
-            #about{flex-direction:column;}
-            #chatbot-iframe{width:90%;height:400px;right:5%;}
-            #projects .project-details{width:95%;padding:20px;}
-        }
-    </style><!-- Projects Section -->
-<section id="projects" class="container reveal">
-    <h2>My Projects</h2>
-    <div class="cards">
-        <!-- Project 1 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200" alt="AI Chatbot">
-            <h3>AI Chatbot</h3>
-            <p>An intelligent chatbot built with AI integration to answer queries in real-time.</p>
-            <a href="https://github.com/sahilrajheti/ai-chatbot" target="_blank" class="btn">View Project</a>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200" alt="Portfolio Website">
-            <h3>Portfolio Website</h3>
-            <p>A modern responsive personal portfolio built with HTML, CSS, and JS.</p>
-            <a href="https://github.com/sahilrajheti/portfolio-website" target="_blank" class="btn">View Project</a>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200" alt="AI Image Generator">
-            <h3>AI Image Generator</h3>
-            <p>Generates AI images based on user prompts using machine learning models.</p>
-            <a href="https://github.com/sahilrajheti/ai-image-generator" target="_blank" class="btn">View Project</a>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200" alt="Web3 Dashboard">
-            <h3>Web3 Dashboard</h3>
-            <p>A blockchain dashboard that tracks crypto wallets, transactions, and NFTs.</p>
-            <a href="https://github.com/sahilrajheti/web3-dashboard" target="_blank" class="btn">View Project</a>
-        </div>
-    </div>
-</section>
-</head>
-<body>
-    <!-- Particle Canvas -->
-    <canvas id="particles"></canvas>
-
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">SahilRajheti</div>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#ratings">Ratings</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#" id="theme-toggle">🌙</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero -->
-    <section id="hero">
-        <h1>Hello, I'm Sahil Rajheti</h1>
-        <p>AI Enthusiast | Web Developer | Problem Solver</p>
-        <button class="btn">Explore My Work</button>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="container reveal">
-        <img src="https://via.placeholder.com/300" alt="Sahil Rajheti">
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="container reveal">
-        <h2>My Skills</h2>
-        <div class="skill"><span>HTML & CSS</span><div class="skill-bar"><span style="width:90%"></span></div></div>
-        <div class="skill"><span>JavaScript</span><div class="skill-bar"><span style="width:85%"></span></div></div>
-        <div class="skill"><span>AI & Machine Learning</span><div class="skill-bar"><span style="width:75%"></span></div></div>
-        <div class="skill"><span>React & Web3</span><div class="skill-bar"><span style="width:70%"></span></div></div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="container reveal">
-        <h2>My Projects</h2>
-        <div class="cards">
-            <div class="card" data-title="AI Chatbot" data-desc="A chatbot powered by AI for instant responses." data-link="https://github.com/sahilrajheti/aichatbot">
-                <h3>AI Chatbot</h3>
-            </div>
-            <div class="card" data-title="Portfolio Website" data-desc="My personal portfolio with animations & smooth scrolling." data-link="https://sahilrajheti.github.io/SahilRajheti/">
-                <h3>Portfolio Website</h3>
-            </div>
-            <div class="card" data-title="Crypto Dashboard" data-desc="A real-time cryptocurrency dashboard using React & API." data-link="#">
-                <h3>Crypto Dashboard</h3>
-            </div>
-            <div class="card" data-title="Weather App" data-desc="Real-time weather information app built with JavaScript." data-link="#">
-                <h3>Weather App</h3>
-            </div>
-        </div>
-
-        <!-- Project Details -->
-        <div class="project-details" id="project-details">
-            <h3 id="project-title"></h3>
-            <p id="project-desc"></p>
-            <a href="#" target="_blank" id="project-link">View Project</a>
-            <div id="project-star-rating">
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="2">&#9733;</span>
-                <span class="star" data-value="3">&#9733;</span>
-                <span class="star" data-value="4">&#9733;</span>
-                <span class="star" data-value="5">&#9733;</span>
-            </div>
-            <div id="project-rating-text"></div>
-            <div id="project-rating-bar"><span></span></div>
-            <button onclick="hideProjectDetails()">Back to Projects</button>
-        </div>
-    </section>
-
-    <!-- Blog -->
-    <section id="blog" class="container reveal">
-        <h2>Blog</h2>
-        <div class="cards">
-            <div class="card"><h3>How AI is Shaping the Web</h3><p>Learn how AI is transforming websites.</p><a href="#">Read More</a></div>
-            <div class="card"><h3>Top 5 Web Dev Tools</h3><p>Discover the most powerful tools for modern web development.</p><a href="#">Read More</a></div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="container reveal">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Sahil Rajheti | 
-            <a href="#">LinkedIn</a> | 
-            <a href="#">Twitter</a> | 
-            <a href="#">GitHub</a>
-        </p>
-    </footer>
-
-    <!-- AI Chatbot -->
-    <button id="chatbot-btn">💬</button>
-    <iframe id="chatbot-iframe" src="https://chatbase.co/chatbot-iframe/VnuQo_giaOsnnKY-_z_lS"></iframe>
-
-    <!-- JavaScript -->
-    <script>
-        // --- Dark/Light Mode ---
-        const toggleBtn = document.getElementById('theme-toggle');
-        toggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('light-mode');
-            toggleBtn.textContent = document.body.classList.contains('light-mode') ? '🌞' : '🌙';
-        });
-
-        // --- Scroll Reveal ---
-        const revealElements = document.querySelectorAll('.reveal');
-        window.addEventListener('scroll', () => {
-            const triggerBottom = window.innerHeight / 5 * 4;
-            revealElements.forEach(el => {
-                const elTop = el.getBoundingClientRect().top;
-                if (elTop < triggerBottom) el.classList.add('active');
-                else el.classList.remove('active');
-            });
-        });
-
-        // --- Skills Animation ---
-        const skillSpans = document.querySelectorAll('#skills .skill-bar span');
-        window.addEventListener('scroll', () => {
-            const skillsTop = document.getElementById('skills').offsetTop;
-            if (window.scrollY > skillsTop - window.innerHeight + 100) {
-                skillSpans.forEach(span => { span.style.width = span.style.width; });
-            }
-        });
-
-        // --- Project Dynamic Loading + Ratings ---
-        const projectCards = document.querySelector('#projects .cards');
-        const projectDetails = document.getElementById('project-details');
-        const projectTitle = document.getElementById('project-title');
-        const projectDesc = document.getElementById('project-desc');
-        const projectLink = document.getElementById('project-link');
-        const projectStars = document.querySelectorAll('#project-star-rating .star');
-        const projectRatingText = document.getElementById('project-rating-text');
-        const projectRatingBar = document.querySelector('#project-rating-bar span');
-
-        document.querySelectorAll('#projects .card').forEach(card => {
-            card.addEventListener('click', () => {
-                projectCards.style.display = 'none';
-                projectDetails.classList.add('active');
-                projectTitle.textContent = card.dataset.title;
-                projectDesc.textContent = card.dataset.desc;
-                projectLink.href = card.dataset.link;
-                fetchAverageRating(card.dataset.title.replace(/\s+/g, '_'));
-            });
-        });
-
-        function hideProjectDetails() {
-            projectCards.style.display = 'grid';
-            projectDetails.classList.remove('active');
-        }
-
-        // --- Chatbot Toggle ---
-        const chatbotBtn = document.getElementById('chatbot-btn');
-        const chatbotFrame = document.getElementById('chatbot-iframe');
-        chatbotBtn.addEventListener('click', () => {
-            chatbotFrame.style.display = chatbotFrame.style.display === 'block' ? 'none' : 'block';
-        });
-
-        // --- Particle Background ---
-        const canvas = document.getElementById('particles');
-        const ctx = canvas.getContext('2d');
-        let particlesArray;
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        const mouse = { x: null, y: null, radius: 100 };
-        window.addEventListener('mousemove', e => { mouse.x = e.x; mouse.y = e.y; });
-        window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; initParticles(); });
-        class Particle {
-            constructor(x, y, dX, dY, size, color) {
-                this.x = x; this.y = y; this.directionX = dX; this.directionY = dY; this.size = size; this.color = color;
-            }
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-                ctx.fillStyle = this.color;
-                ctx.fill();
-            }
-            update() {
-                if (this.x + this.size > canvas.width || this.x - this.size < 0) this.directionX = -this.directionX;
-                if (this.y + this.size > canvas.height || this.y - this.size < 0) this.directionY = -this.directionY;
-                this.x += this.directionX;
-                this.y += this.directionY;
-                let dx = mouse.x - this.x;
-                let dy = mouse.y - this.y;
-                let dist = Math.sqrt(dx * dx + dy * dy);
-                if (dist < mouse.radius) {
-                    if (mouse.x < this.x && this.x < canvas.width - this.size * 10) this.x += 5;
-                    if (mouse.x > this.x && this.x > this.size * 10) this.x -= 5;
-                    if (mouse.y < this.y && this.y < canvas.height - this.size * 10) this.y += 5;
-                    if (mouse.y > this.y && this.y > this.size * 10) this.y -= 5;
-                }
-                this.draw();
-            }
-        }
-        function initParticles() {
-            particlesArray = [];
-            let num = (canvas.width * canvas.height) / 8000;
-            for (let i = 0; i < num; i++) {
-                let size = (Math.random() * 3) + 1;
-                let x = Math.random() * (canvas.width - size * 2) + size * 2;
-                let y = Math.random() * (canvas.height - size * 2) + size * 2;
-                let dX = (Math.random() * 1) - 0.5;
-                let dY = (Math.random() * 1) - 0.5;
-                particlesArray.push(new Particle(x, y, dX, dY, size, '#00ffff'));
-            }
-        }
-        function connect() {
-            let opacity = 1;
-            for (let a = 0; a < particlesArray.length; a++) {
-                for (let b = a; b < particlesArray.length; b++) {
-                    let dx = particlesArray[a].x - particlesArray[b].x;
-                    let dy = particlesArray[a].y - particlesArray[b].y;
-                    let dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < 120) {
-                        opacity = 1 - (dist / 120);
-                        ctx.strokeStyle = 'rgba(0,255,255,' + opacity + ')';
-                        ctx.lineWidth = 1;
-                        ctx.beginPath();
-                        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
-                        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
-                        ctx.stroke();
-                    }
-                }
-            }
-        }
-        function animateParticles() {
-            requestAnimationFrame(animateParticles);
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particlesArray.forEach(p => p.update());
-            connect();
-        }
-        initParticles();
-        animateParticles();
-
-        // --- Ratings ---
-        function fetchAverageRating(project) {
-            let projectRef = database.ref('projects/' + project);
-            projectRef.once('value', snapshot => {
-                let ratings = [];
-                snapshot.forEach(child => ratings.push(child.val()));
-                let avg = ratings.length > 0 ? (ratings.reduce((a, b) => a + b, 0) / ratings.length).toFixed(1) : 0;
-                projectRatingText.textContent = `Average rating: ${avg} / 5 (${ratings.length} votes)`;
-                projectStars.forEach(s => s.classList.toggle('active', s.dataset.value <= Math.round(avg)));
-                projectRatingBar.style.width = (avg / 5 * 100) + '%';
-            });
-        }
-
-        // Star click to rate
-        projectStars.forEach(star => {
-            star.addEventListener('click', () => {
-                const val = parseInt(star.dataset.value);
-                const proj = projectTitle.textContent.replace(/\s+/g, '_');
-                database.ref('projects/' + proj).push(val);
-                fetchAverageRating(proj);
-            });
-        });
-
-        // Ratings Dashboard
-        function updateRatingsDashboard() {
-            const dashboard = document.getElementById('ratings-dashboard');
-            dashboard.innerHTML = '';
-            database.ref('projects').once('value', snapshot => {
-                snapshot.forEach(projSnap => {
-                    const projectName = projSnap.key.replace(/_/g, ' ');
-                    const ratings = [];
-                    projSnap.forEach(r => ratings.push(r.val()));
-                    const avg = ratings.length > 0 ? (ratings.reduce((a, b) => a + b, 0) / ratings.length).toFixed(1) : 0;
-                    const card = document.createElement('div');
-                    card.className = 'rating-card';
-                    card.innerHTML = `<h3>${projectName}</h3><div class="rating-bar">${[1, 2, 3, 4, 5].map(i => `<span class="${i <= Math.round(avg) ? 'active' : ''}">&#9733;</span>`).join('')}</div><div class="rating-info">Average: ${avg} / 5 (${ratings.length} votes)</div>`;
-                    dashboard.appendChild(card);
-                });
-            });
-        }
-        updateRatingsDashboard();
-        setInterval(updateRatingsDashboard, 5000);
-    </script>
-</body>
-</html>
-<a href="courses/affiliate.html"><button>View Affiliate Course</button></a>
