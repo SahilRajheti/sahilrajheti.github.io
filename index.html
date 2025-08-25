@@ -1,127 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sahil Rajheti - Portfolio & Courses</title>
+  <!-- ========== ESSENTIAL META (SEO + Social) ========== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Money Earning Mastery — Sahil Rajheti</title>
+  <meta name="description" content="Smart Money Earning Mastery — A futuristic, practical course by Sahil Rajheti. Learn freelancing, affiliate marketing, content, e-commerce, AI automation and passive income. Buy now (₹499) — instant access." />
+  <link rel="canonical" href="https://sahilrajheti.github.io/" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Smart Money Earning Mastery — Sahil Rajheti" />
+  <meta property="og:description" content="Futuristic practical course: freelancing, affiliate, content, e-commerce, AI automation. One-time ₹499." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sahilrajheti.github.io/" />
+  <meta property="og:image" content="https://sahilrajheti.github.io/og-course-image.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Smart Money Earning Mastery — Sahil Rajheti" />
+  <meta name="twitter:description" content="Learn modern online income methods and build recurring income — curated by Sahil Rajheti." />
+  <meta name="twitter:image" content="https://sahilrajheti.github.io/og-course-image.png" />
+
+  <!-- ========== JSON-LD Structured Data ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Smart Money Earning Mastery",
+    "image": "https://sahilrajheti.github.io/og-course-image.png",
+    "description": "A practical course teaching freelancing, affiliate marketing, content, e-commerce, AI automation and passive income.",
+    "brand": { "@type": "Person", "name": "Sahil Rajheti" },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://sahilrajheti.github.io/",
+      "priceCurrency": "INR",
+      "price": "499",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <!-- ========== FONTS & LIGHT ASSETS ========== -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+
+  <!-- ========== STYLES ========== -->
   <style>
-    body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6;}
-    header {background:#222; color:#fff; padding:20px; text-align:center;}
-    nav a {color:#fff; margin:0 10px; text-decoration:none;}
-    section {padding:50px 20px; max-width:1000px; margin:auto;}
-    h1, h2, h3 {color:#222;}
-    .btn {display:inline-block; padding:10px 20px; background:#0077ff; color:#fff; text-decoration:none; border-radius:5px;}
-    footer {background:#111; color:#ccc; text-align:center; padding:20px;}
-    footer a {color:#ccc; margin:0 8px; text-decoration:none;}
-    .card {border:1px solid #ddd; padding:15px; margin:10px 0; border-radius:5px;}
-    @media (max-width:600px){section{padding:30px 10px;}}
+    :root{
+      --bg:#05060a;
+      --card: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      --glass: rgba(255,255,255,0.03);
+      --accent1: #7c5cff;
+      --accent2: #00e0c6;
+      --muted: #9aa3c7;
+      --white: #ecf0ff;
+      --radius:14px;
+      --maxw:1200px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:
+        radial-gradient(800px 300px at 10% 10%, rgba(124,92,255,0.06), transparent 8%),
+        radial-gradient(700px 300px at 90% 85%, rgba(0,224,198,0.04), transparent 10%),
+        var(--bg);
+      color:var(--white); -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale; padding-bottom:60px;
+    }
+
+    /* container */
+    .wrap{max-width:var(--maxw); margin:28px auto; padding:20px; gap:24px; display:grid; grid-template-columns: 320px 1fr;}
+    @media (max-width:980px){ .wrap{grid-template-columns:1fr; padding:14px} }
+
+    /* SIDEBAR */
+    .aside{
+      position:sticky; top:18px; height:calc(100vh - 36px);
+      background:var(--card); border-radius:var(--radius); padding:18px; border:1px solid rgba(255,255,255,0.04);
+      backdrop-filter: blur(6px);
+    }
+    .brand{display:flex; gap:12px; align-items:center}
+    .logo{
+      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2)); display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-family:Poppins;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.6), 0 2px 8px rgba(124,92,255,0.15);
+    }
+    .brand h1{font-size:18px;margin:0;line-height:1;color:var(--white)}
+    .tag{color:var(--muted);font-size:13px;margin-top:8px}
+
+    .priceBox{margin-top:18px;background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .price {font-weight:800;font-size:20px;color:var(--white)}
+    .buyNote{color:var(--muted);font-size:13px;margin-top:6px}
+
+    /* BUY BUTTON uses Razorpay script (embed) - keep it inside .buyWrap */
+    .buyWrap{margin-top:12px}
+
+    /* NAV / contents */
+    .toc{margin-top:18px}
+    .toc h3{margin:10px 0 8px;color:var(--muted);font-size:12px;letter-spacing:0.08em}
+    .toc a{display:block;color:var(--white);text-decoration:none;padding:8px;border-radius:8px;margin-bottom:6px;font-weight:600}
+    .toc a:hover{background:linear-gradient(90deg, rgba(124,92,255,0.08), rgba(0,224,198,0.05));}
+
+    /* MAIN AREA */
+    .main{padding-left:18px}
+    .hero{
+      display:flex;align-items:center;gap:20px; justify-content:space-between;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px; padding:22px; border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.5)
+    }
+    .hero-left{max-width:62%}
+    .hero h2{margin:0;font-family:Poppins,Inter;font-size:26px;line-height:1.05}
+    .hero p{color:var(--muted); margin:10px 0 0}
+
+    .hero-cta{display:flex;gap:12px; margin-top:14px}
+    .cta-btn{padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .primary{background: linear-gradient(90deg,var(--accent1),var(--accent2)); color:#021; box-shadow:0 10px 30px rgba(124,92,255,0.12)}
+    .ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
+
+    /* sections */
+    section.card{
+      margin-top:22px; background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.007));
+      border-radius:12px; padding:18px; border:1px solid rgba(255,255,255,0.03)
+    }
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media(max-width:760px){ .grid-2{grid-template-columns:1fr} }
+
+    .skill{background:linear-gradient(90deg, rgba(255,255,255,0.015), rgba(255,255,255,0.005)); padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02); font-weight:600}
+
+    /* Flipbook area */
+    #flipbookWrap{margin-top:14px; display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap}
+    #flipbook{width:680px; height:420px; background:transparent}
+    #flipbook .page{
+      background: linear-gradient(180deg,#fff,#fbfbff); color:#111; border-radius:8px; box-shadow:0 20px 40px rgba(2,6,23,0.4);
+      padding:22px; box-sizing:border-box; border:1px solid #e6e7f1;
+    }
+    #flipControls{display:flex; gap:8px; align-items:center; margin-top:10px}
+    .fc-btn{background:transparent;border:1px solid rgba(0,0,0,0.06);padding:10px 12px;border-radius:10px;cursor:pointer;font-weight:700}
+
+    /* blog/project cards look */
+    .project{background:linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02)); padding:14px; border-radius:10px; border:1px solid rgba(255,255,255,0.02)}
+    .muted{color:var(--muted); font-size:14px}
+
+    /* footer */
+    footer{margin-top:28px;text-align:center;color:var(--muted); font-size:13px}
+    footer a{color:var(--accent2); text-decoration:none; font-weight:600}
+
+    /* small helpers */
+    .hidden-desktop{display:none}
+    @media(max-width:980px){ .hidden-desktop{display:block} .aside{position:relative;height:auto} }
   </style>
+
+  <!-- jQuery + Turn.js (for real page flip) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js" defer crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- ===== WRAPPER ===== -->
+  <div class="wrap" role="main">
 
-  <!-- HEADER -->
-  <header>
-    <h1>Sahil Rajheti</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#blog">Blog</a>
-      <a href="#course">Course</a>
-      <a href="#contact">Contact</a>
-      <a href="#policies">Policies</a>
-    </nav>
-  </header>
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="aside" aria-label="Sidebar">
+      <div class="brand">
+        <div class="logo">SR</div>
+        <div>
+          <h1>Sahil Rajheti</h1>
+          <div class="tag">Instructor • Web & AI • Digital Business</div>
+        </div>
+      </div>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi, I’m <strong>Sahil Rajheti</strong>. I build websites, create courses, and explore new ways of earning online. This is my portfolio + learning hub.</p>
-  </section>
+      <div class="priceBox" aria-hidden="false">
+        <div class="price">₹499 <span style="font-weight:600;color:var(--muted);font-size:12px">one-time</span></div>
+        <div class="buyNote">Instant access • Secure payments • Updates included</div>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Web Development (HTML, CSS, JS)</li>
-      <li>AI Tools & Automation</li>
-      <li>Affiliate Marketing</li>
-      <li>Content Creation</li>
-    </ul>
-  </section>
+        <div class="buyWrap" style="margin-top:12px">
+          <!-- RAZORPAY PAYMENT BUTTON EMBED -->
+          <form>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                    data-payment_button_id="pl_R9dTTbHEyvHVx6"
+                    async> </script>
+          </form>
+        </div>
+      </div>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>A responsive personal website with blog, course, and payment integration.</p>
-    </div>
-    <div class="card">
-      <h3>AI Chatbot</h3>
-      <p>Custom AI assistant integrated into websites using OpenAI API.</p>
-    </div>
-  </section>
+      <nav class="toc" aria-label="Course contents">
+        <h3>CONTENTS</h3>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#course">Course</a>
+        <a href="#contact">Contact</a>
+        <a href="#policies">Policies</a>
+      </nav>
 
-  <!-- BLOG -->
-  <section id="blog">
-    <h2>Blog</h2>
-    <div class="card">
-      <h3>How to Earn Money Online</h3>
-      <p>Top strategies for affiliate marketing, freelancing, and digital products.</p>
-    </div>
-    <div class="card">
-      <h3>Future Skills</h3>
-      <p>The most in-demand skills for the next decade: AI, Web3, Automation.</p>
-    </div>
-  </section>
+      <div style="margin-top:12px;color:var(--muted);font-size:13px">
+        © 2025 • <strong>Sahil Rajheti</strong>
+      </div>
+    </aside>
 
-  <!-- COURSE -->
-  <section id="course">
-    <h2>Exclusive Course</h2>
-    <p><strong>How to Earn Money Online</strong> – A step-by-step course with proven strategies. Price: ₹499</p>
+    <!-- ===== MAIN ===== -->
+    <main class="main" id="mainContent">
 
-    <!-- RAZORPAY BUTTON -->
-    <form>
-      <script src="https://checkout.razorpay.com/v1/payment-button.js"
-              data-payment_button_id="pl_R9dTTbHEyvHVx6" async>
-      </script>
-    </form>
-  </section>
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-left">
+          <h2 id="heroTitle">Smart Money Earning Mastery — Build reliable digital income in 2025</h2>
+          <p class="muted">A practical, AI-forward course teaching freelancing, affiliate marketing, content systems, digital products and automation. Focused on fast results and long-term growth.</p>
+          <div class="hero-cta">
+            <button class="cta-btn primary" onclick="document.querySelector('[data-payment_button_id]').scrollIntoView({behavior:'smooth'})">Buy Course ₹499</button>
+            <a class="cta-btn ghost" href="#course">View Course</a>
+          </div>
+        </div>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:sahilkhan701766@gmail.com">sahilkhan701766@gmail.com</a></p>
-    <p>Phone: +91-7078297357</p>
-    <p>Location: Hapur, Uttar Pradesh, India</p>
-  </section>
+        <div style="text-align:right" class="hidden-desktop">
+          <!-- small summary card for mobile -->
+        </div>
+      </section>
 
-  <!-- POLICIES -->
-  <section id="policies">
-    <h2>Policies</h2>
+      <!-- QUICK SKILLS & PROJECTS -->
+      <section class="card" id="about" aria-labelledby="aboutHeading">
+        <h2 id="aboutHeading">About Me</h2>
+        <p class="muted">I’m Sahil — I build practical web & AI products, and teach clear, battle-tested ways to earn online. I focus on fast execution, not theory.</p>
 
-    <h3>Shipping Policy</h3>
-    <p>Our products are 100% digital courses. After successful payment, you get instant access via email/website. No physical shipping.</p>
+        <div style="margin-top:14px" class="grid-2">
+          <div>
+            <h3 id="skills">Skills</h3>
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px">
+              <div class="skill">Web Development</div>
+              <div class="skill">AI & Automation</div>
+              <div class="skill">Affiliate Marketing</div>
+              <div class="skill">Content Systems</div>
+            </div>
+          </div>
 
-    <h3>Refund Policy</h3>
-    <p>If you face technical issues or cannot access the course after payment, you may request a refund within 7 days. No refunds on completed courses.</p>
+          <div>
+            <h3>Top Projects</h3>
+            <div class="project" style="margin-top:8px">
+              <strong>Portfolio + Course Platform</strong>
+              <div class="muted">Github Pages • Razorpay integration • Flipbook UI</div>
+            </div>
+            <div class="project" style="margin-top:8px">
+              <strong>AI Chatbot</strong>
+              <div class="muted">Customer automation & prompt bundles</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <h3>Privacy Policy</h3>
-    <p>Your data is safe with us. We only collect your email/payment details to deliver the course. We never share your data with third parties.</p>
+      <!-- BLOG -->
+      <section class="card" id="blog">
+        <h2>Blog (Latest)</h2>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:8px">
+          <article class="project">
+            <strong>How to start Affiliate marketing in 30 days</strong>
+            <div class="muted">Step-by-step plan: niche → content → conversion</div>
+          </article>
+          <article class="project">
+            <strong>Freelance to $1000/mo roadmap</strong>
+            <div class="muted">Fast client wins, pricing, and retention</div>
+          </article>
+        </div>
+      </section>
 
-    <h3>Terms & Conditions</h3>
-    <p>By purchasing our course, you agree not to share, resell, or distribute the content. Access is for personal use only.</p>
-  </section>
+      <!-- COURSE FLIPBOOK -->
+      <section class="card" id="course" aria-labelledby="courseHeading">
+        <h2 id="courseHeading">Course: Smart Money Earning Mastery (Flipbook)</h2>
+        <p class="muted">Flip through a preview. Purchase on the final page to unlock full access.</p>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Sahil Rajheti. All rights reserved.</p>
-    <a href="#about">About</a> | 
-    <a href="#course">Course</a> | 
-    <a href="#contact">Contact</a> | 
-    <a href="#policies">Policies</a>
-  </footer>
+        <div id="flipbookWrap">
+          <div id="flipbook" aria-label="Course flipbook preview">
+            <!-- Each .page becomes a book page -->
+            <div class="page" style="overflow:auto">
+              <h3>Introduction</h3>
+              <p>Money-making in 2025 requires stacking skills and assets. This course shows the best methods, shortcuts and the 30-day execution plan.</p>
+            </div>
+            <div class="page">
+              <h3>Chapter 1 — Freelancing</h3>
+              <ul>
+                <li>High-value skills: web dev, design, video, prompts</li>
+                <li>Getting first clients fast (templates included)</li>
+              </ul>
+            </div>
+            <div class="page">
+              <h3>Chapter 2 — Affiliate Marketing</h3>
+              <p>Evergreen niches, SEO + short-form funnels, bonus lead magnet strategy.</p>
+            </div>
+            <div class="page">
+              <h3>Chapter 3 — Content & YouTube</h3>
+              <p>Faceless content workflows, repurposing, and revenue paths.</p>
+            </div>
+            <div class="page">
+              <h3>Chapter 4 — Digital Products</h3>
+              <p>From 48-hour guide → productized courses → bundles & license options.</p>
+            </div>
+            <div class="page">
+              <h3>Chapter 5 — AI & Automation</h3>
+              <p>Sell chatbots, automations and AI prompt packs to SMBs.</p>
+            </div>
+            <div class="page">
+              <h3>30-Day Action Plan</h3>
+              <ol>
+                <li>Week 1: Learn skill & create 3 samples</li>
+                <li>Week 2: Outreach + short-form content</li>
+                <li>Week 3: Deliver first client + create product</li>
+                <li>Week 4: Launch & capture emails</li>
+              </ol>
+            </div>
+            <div class="page">
+              <h3>Final — Buy Now</h3>
+              <p>Unlock full course (templates, actionable scripts, printable PDF).</p>
+              <div style="margin-top:10px">
+                <!-- Razorpay button repeated on final page -->
+                <form>
+                  <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                          data-payment_button_id="pl_R9dTTbHEyvHVx6"
+                          async> </script>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Flip controls (for accessibility & mobile) -->
+        <div id="flipControls" aria-hidden="false">
+          <button id="prev" class="fc-btn">◀ Prev</button>
+          <button id="next" class="fc-btn">Next ▶</button>
+          <span class="muted" style="margin-left:10px">Tip: swipe pages on mobile</span>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="card" id="contact">
+        <h2>Contact</h2>
+        <p>Need help? Email me at <a href="mailto:sahilkhan701766@gmail.com" style="color:var(--accent2)">sahilkhan701766@gmail.com</a> or use phone: +91-7078297357</p>
+      </section>
+
+      <!-- POLICIES -->
+      <section class="card" id="policies">
+        <h2>Policies</h2>
+
+        <h3>Shipping Policy</h3>
+        <p class="muted">This is a digital product — no physical shipping. After successful payment you will receive access instructions via the Razorpay success flow and email.</p>
+
+        <h3>Refund Policy</h3>
+        <p class="muted">Refund requests may be accepted within 7 days for technical issues only; provide payment ID and details. All other sales are final.</p>
+
+        <h3>Privacy Policy</h3>
+        <p class="muted">We collect necessary contact & payment details only to provide the product and support. We do not sell your data.</p>
+
+        <h3>Terms & Conditions</h3>
+        <p class="muted">By buying this course you agree to use it for personal learning; sharing or reselling course materials is prohibited.</p>
+      </section>
+
+      <footer>
+        <p>© 2025 Sahil Rajheti — <a href="#policies">Policies</a> • <a href="#contact">Contact</a></p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // Wait for turn.js to load then initialize flipbook
+    function initFlipbook(){
+      try {
+        if (typeof $ === 'undefined' || typeof $.fn.turn === 'undefined') {
+          // retry a few times as scripts load
+          setTimeout(initFlipbook, 150);
+          return;
+        }
+        $("#flipbook").turn({
+          width: Math.min(680, window.innerWidth - 80),
+          height: Math.min(420, window.innerHeight * 0.6),
+          autoCenter: true,
+          elevation: 50,
+          gradients: true,
+          acceleration: true
+        });
+
+        // Next / Prev buttons
+        document.getElementById('next').addEventListener('click', ()=> $("#flipbook").turn('next'));
+        document.getElementById('prev').addEventListener('click', ()=> $("#flipbook").turn('previous'));
+
+        // Make responsive on resize
+        window.addEventListener('resize', ()=> {
+          try{
+            $("#flipbook").turn('size', Math.min(680, window.innerWidth - 80), Math.min(420, window.innerHeight * 0.6));
+          }catch(e){}
+        });
+      } catch (e){
+        console.error('Flipbook init failed', e);
+      }
+    }
+    document.addEventListener('DOMContentLoaded', initFlipbook, {once:true});
+  </script>
 </body>
 </html>
