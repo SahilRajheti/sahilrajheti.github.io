@@ -3,142 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Earn Money Online - Course</title>
+  <title>Sahil Rajheti - Portfolio & Courses</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 1.5rem;
-    }
-    .container {
-      display: flex;
-    }
-    .sidebar {
-      width: 220px;
-      background: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-    }
-    .sidebar h2 {
-      font-size: 1.2rem;
-    }
-    .content {
-      flex: 1;
-      padding: 40px;
-    }
-    .book {
-      background: white;
-      padding: 30px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      max-width: 700px;
-      margin: auto;
-      border-radius: 10px;
-    }
-    .chapter {
-      margin-bottom: 50px;
-    }
-    .chapter h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-    .buy-section {
-      text-align: center;
-      margin: 40px 0;
-      padding: 20px;
-      background: #f9f9f9;
-      border: 1px dashed #bbb;
-      border-radius: 8px;
-    }
-    footer {
-      background: #111;
-      color: #ddd;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      margin-top: 50px;
-    }
-    footer a {
-      color: #0af;
-      text-decoration: none;
-      margin: 0 10px;
-    }
+    body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6;}
+    header {background:#222; color:#fff; padding:20px; text-align:center;}
+    nav a {color:#fff; margin:0 10px; text-decoration:none;}
+    section {padding:50px 20px; max-width:1000px; margin:auto;}
+    h1, h2, h3 {color:#222;}
+    .btn {display:inline-block; padding:10px 20px; background:#0077ff; color:#fff; text-decoration:none; border-radius:5px;}
+    footer {background:#111; color:#ccc; text-align:center; padding:20px;}
+    footer a {color:#ccc; margin:0 8px; text-decoration:none;}
+    .card {border:1px solid #ddd; padding:15px; margin:10px 0; border-radius:5px;}
+    @media (max-width:600px){section{padding:30px 10px;}}
   </style>
 </head>
 <body>
-  <header>📘 How to Earn Money Online - Premium Course</header>
 
-  <div class="container">
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <h2>Get Full Access</h2>
-      <!-- Razorpay Sidebar Button -->
-      <form>
-        <script src="https://checkout.razorpay.com/v1/payment-button.js"
-                data-payment_button_id="pl_R9dTTbHEyvHVx6"
-                async> </script>
-      </form>
+  <!-- HEADER -->
+  <header>
+    <h1>Sahil Rajheti</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#course">Course</a>
+      <a href="#contact">Contact</a>
+      <a href="#policies">Policies</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m <strong>Sahil Rajheti</strong>. I build websites, create courses, and explore new ways of earning online. This is my portfolio + learning hub.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Web Development (HTML, CSS, JS)</li>
+      <li>AI Tools & Automation</li>
+      <li>Affiliate Marketing</li>
+      <li>Content Creation</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>A responsive personal website with blog, course, and payment integration.</p>
     </div>
-
-    <!-- Main Content -->
-    <div class="content">
-      <div class="book">
-        <!-- Cover Page -->
-        <div class="chapter">
-          <h2>Welcome to the Course</h2>
-          <p>This is your ultimate step-by-step guide to learning how to earn money online. 🚀</p>
-          <p>Unlock secrets of Affiliate Marketing, Freelancing, Blogging, Digital Products, and more!</p>
-        </div>
-
-        <!-- Buy Now on Cover Page -->
-        <div class="buy-section">
-          <h3>Unlock Full Course</h3>
-          <p>Get lifetime access to all chapters for just <b>₹499</b>.</p>
-          <form>
-            <script src="https://checkout.razorpay.com/v1/payment-button.js"
-                    data-payment_button_id="pl_R9dTTbHEyvHVx6"
-                    async> </script>
-          </form>
-        </div>
-
-        <!-- Locked Content -->
-        <div class="chapter">
-          <h2>📌 Course Chapters</h2>
-          <p>🔒 The full course is locked. Complete your purchase to unlock:</p>
-          <ul>
-            <li>Affiliate Marketing Mastery</li>
-            <li>Freelancing Success</li>
-            <li>Blogging for Profit</li>
-            <li>YouTube & Content Creation</li>
-            <li>Digital Products & Courses</li>
-            <li>Passive Income Streams</li>
-          </ul>
-        </div>
-      </div>
+    <div class="card">
+      <h3>AI Chatbot</h3>
+      <p>Custom AI assistant integrated into websites using OpenAI API.</p>
     </div>
-  </div>
+  </section>
 
-  <!-- Footer -->
+  <!-- BLOG -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="card">
+      <h3>How to Earn Money Online</h3>
+      <p>Top strategies for affiliate marketing, freelancing, and digital products.</p>
+    </div>
+    <div class="card">
+      <h3>Future Skills</h3>
+      <p>The most in-demand skills for the next decade: AI, Web3, Automation.</p>
+    </div>
+  </section>
+
+  <!-- COURSE -->
+  <section id="course">
+    <h2>Exclusive Course</h2>
+    <p><strong>How to Earn Money Online</strong> – A step-by-step course with proven strategies. Price: ₹499</p>
+
+    <!-- RAZORPAY BUTTON -->
+    <form>
+      <script src="https://checkout.razorpay.com/v1/payment-button.js"
+              data-payment_button_id="pl_R9dTTbHEyvHVx6" async>
+      </script>
+    </form>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:sahilkhan701766@gmail.com">sahilkhan701766@gmail.com</a></p>
+    <p>Phone: +91-7078297357</p>
+    <p>Location: Hapur, Uttar Pradesh, India</p>
+  </section>
+
+  <!-- POLICIES -->
+  <section id="policies">
+    <h2>Policies</h2>
+
+    <h3>Shipping Policy</h3>
+    <p>Our products are 100% digital courses. After successful payment, you get instant access via email/website. No physical shipping.</p>
+
+    <h3>Refund Policy</h3>
+    <p>If you face technical issues or cannot access the course after payment, you may request a refund within 7 days. No refunds on completed courses.</p>
+
+    <h3>Privacy Policy</h3>
+    <p>Your data is safe with us. We only collect your email/payment details to deliver the course. We never share your data with third parties.</p>
+
+    <h3>Terms & Conditions</h3>
+    <p>By purchasing our course, you agree not to share, resell, or distribute the content. Access is for personal use only.</p>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>
-      <a href="terms.html">Terms & Conditions</a> |
-      <a href="privacy.html">Privacy Policy</a> |
-      <a href="refund.html">Refund Policy</a> |
-      <a href="shipping.html">Shipping Policy</a>
-    </p>
-    <p>© 2025 Sahil Rajheti. All rights reserved.</p>
+    <p>&copy; 2025 Sahil Rajheti. All rights reserved.</p>
+    <a href="#about">About</a> | 
+    <a href="#course">Course</a> | 
+    <a href="#contact">Contact</a> | 
+    <a href="#policies">Policies</a>
   </footer>
+
 </body>
 </html>
