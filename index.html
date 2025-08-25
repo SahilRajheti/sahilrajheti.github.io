@@ -1,63 +1,116 @@
-<!-- Courses Section -->
-<section id="courses" class="py-16">
-  <div class="container mx-auto px-6">
-    <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Featured Courses</h3>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Rajheti - Courses</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
 
-      <!-- Course 1: Affiliate Marketing -->
-      <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
-        <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
-          <span class="text-6xl">💼</span>
-        </div>
-        <div class="p-6">
-          <h4 class="text-xl font-bold mb-2">Affiliate Marketing Mastery</h4>
-          <p class="text-gray-600 mb-4">Learn Affiliate Marketing from scratch and start earning passive income online.</p>
-          <div class="flex items-center justify-between mb-4">
-            <span class="text-2xl font-bold text-purple-600">₹499</span>
-            <span class="text-sm text-gray-500">10 hours • 30 lessons</span>
-          </div>
-          <button onclick="purchaseCourse('affiliate', 'Affiliate Marketing Mastery', 499)" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
-            Buy Course
-          </button>
-        </div>
-      </div>
-
-      <!-- Course 2: Learn ChatGPT -->
-      <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
-        <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
-          <span class="text-6xl">🤖</span>
-        </div>
-        <div class="p-6">
-          <h4 class="text-xl font-bold mb-2">Learn ChatGPT</h4>
-          <p class="text-gray-600 mb-4">Master ChatGPT, AI prompts, and create your own AI tools with real-world projects.</p>
-          <div class="flex items-center justify-between mb-4">
-            <span class="text-2xl font-bold text-purple-600">₹499</span>
-            <span class="text-sm text-gray-500">8 hours • 25 lessons</span>
-          </div>
-          <button onclick="purchaseCourse('chatgpt', 'Learn ChatGPT', 499)" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
-            Buy Course
-          </button>
-        </div>
-      </div>
-
-      <!-- Course 3: Crypto Trading -->
-      <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
-        <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
-          <span class="text-6xl">💹</span>
-        </div>
-        <div class="p-6">
-          <h4 class="text-xl font-bold mb-2">Crypto Trading Mastery</h4>
-          <p class="text-gray-600 mb-4">Step-by-step guide to trading Bitcoin, Ethereum & Altcoins with strategies and risk management.</p>
-          <div class="flex items-center justify-between mb-4">
-            <span class="text-2xl font-bold text-purple-600">₹499</span>
-            <span class="text-sm text-gray-500">12 hours • 40 lessons</span>
-          </div>
-          <button onclick="purchaseCourse('crypto', 'Crypto Trading Mastery', 499)" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
-            Buy Course
-          </button>
-        </div>
-      </div>
-
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-6 shadow-lg">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Sahil Rajheti</h1>
+      <nav>
+        <a href="#courses" class="px-4 hover:text-gray-200">Courses</a>
+        <a href="#about" class="px-4 hover:text-gray-200">About</a>
+        <a href="#contact" class="px-4 hover:text-gray-200">Contact</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Welcome to My Learning Hub</h2>
+    <p class="text-gray-600 text-lg mb-6">Start your journey with Affiliate Marketing, AI, and Crypto Trading Courses.</p>
+    <a href="#courses" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700">Explore Courses</a>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-16">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-12">Featured Courses</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Course 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+            <span class="text-6xl">💼</span>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Affiliate Marketing Mastery</h4>
+            <p class="text-gray-600 mb-4">Learn Affiliate Marketing from scratch and start earning passive income online.</p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-purple-600">₹499</span>
+              <span class="text-sm text-gray-500">10 hours • 30 lessons</span>
+            </div>
+            <a href="#" class="block text-center bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700">Buy Course</a>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
+            <span class="text-6xl">🤖</span>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Learn ChatGPT</h4>
+            <p class="text-gray-600 mb-4">Master ChatGPT, AI prompts, and create your own AI tools with real-world projects.</p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-purple-600">₹499</span>
+              <span class="text-sm text-gray-500">8 hours • 25 lessons</span>
+            </div>
+            <a href="#" class="block text-center bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700">Buy Course</a>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
+            <span class="text-6xl">💹</span>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Crypto Trading Mastery</h4>
+            <p class="text-gray-600 mb-4">Step-by-step guide to trading Bitcoin, Ethereum & Altcoins with strategies and risk management.</p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-purple-600">₹499</span>
+              <span class="text-sm text-gray-500">12 hours • 40 lessons</span>
+            </div>
+            <a href="#" class="block text-center bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700">Buy Course</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-white py-16 text-center">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-4">About Me</h3>
+      <p class="text-gray-600 max-w-2xl mx-auto">Hi, I'm Sahil Rajheti 👋 I create simple and powerful courses to help you earn money online, master AI tools, and trade crypto successfully.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-50 text-center">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-4">Contact Me</h3>
+      <p class="text-gray-600 mb-6">Have questions? Reach out to me.</p>
+      <a href="mailto:sahil@example.com" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+    <p>&copy; 2025 Sahil Rajheti. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
