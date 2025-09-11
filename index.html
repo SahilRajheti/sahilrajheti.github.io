@@ -1,0 +1,199 @@
+<html>
+ <head>  
+ </head> 
+ <body> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Sahil Rajheti | Portfolio &amp; Chatbot</title> 
+  <!-- SEO Meta Tags --> 
+  <meta name="description" content="Portfolio of Sahil Rajheti, BCA student at JMS Group of Institutions, Hapur. Skilled in Web Development, AI Chatbots, and Digital Innovation."> 
+  <meta name="keywords" content="Sahil Rajheti, JMS Group of Institutions Hapur, BCA Student, Web Developer, AI Chatbot Developer, Programming Projects, Portfolio Website, Earn Money Online, Hapur Uttar Pradesh"> 
+  <meta name="author" content="Sahil Rajheti"> 
+  <!-- Fonts --> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&amp;display=swap" rel="stylesheet"> 
+  <!-- Styles --> 
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #0f172a;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #007bff, #00d4ff);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { font-size: 2rem; }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #00d4ff;
+    }
+    p { margin-bottom: 15px; text-align: center; }
+
+    /* About */
+    .about img {
+      width: 160px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+      border: 3px solid #00d4ff;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .skill {
+      background: #1e293b;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: 1px solid #00d4ff;
+    }
+
+    /* Projects */
+    .project {
+      background: #1e293b;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #00d4ff;
+    }
+
+    /* Chatbot */
+    iframe.chatbot {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* Contact */
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #1e293b;
+      font-size: 0.9rem;
+    }
+
+    /* Animations */
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+    [data-animate].visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.5rem; }
+      iframe.chatbot { height: 400px; }
+    }
+  </style> 
+  <!-- Header --> 
+  <header> 
+   <h1>Sahil Rajheti</h1> 
+   <nav> 
+    <a href="#about">About</a> 
+    <a href="#skills">Skills</a> 
+    <a href="#projects">Projects</a> 
+    <a href="#contact">Contact</a> 
+   </nav> 
+  </header> 
+  <!-- About --> 
+  <section id="about" class="about" data-animate> 
+   <img src="IMG_0147.jpeg" alt="Sahil Rajheti"> 
+   <h2>About Me</h2> 
+   <p>Hello! I am <strong>Sahil Rajheti</strong>, a BCA student at <strong>JMS Group of Institutions, Hapur</strong>. I love building websites, experimenting with AI, and creating useful tools like chatbots.</p> 
+  </section> 
+  <!-- Skills --> 
+  <section id="skills" data-animate> 
+   <h2>My Professional Skills</h2> 
+   <div class="skills-list"> 
+    <span class="skill">Web Development</span> 
+    <span class="skill">C Programming</span> 
+    <span class="skill">Python</span> 
+    <span class="skill">AI Chatbot Development</span> 
+    <span class="skill">HTML, CSS, JS</span> 
+    <span class="skill">Database Management</span> 
+    <span class="skill">SEO Optimization</span> 
+    <span class="skill">Digital Innovation</span> 
+   </div> 
+  </section> 
+  <!-- Projects --> 
+  <section id="projects" data-animate> 
+   <h2>My Projects</h2> 
+   <div class="project"> 
+    <h3>🤖 AI Chatbot</h3> 
+    <p>A smart chatbot project that can answer queries, support multiple languages, and save leads.</p> 
+    <!-- Replace this src with your real chatbot link (from Chatbase, Botpress, or Dialogflow) --> 
+    <iframe class="chatbot" src="https://www.chatbase.co/chatbot-iframe/YOUR-CHATBOT-ID"></iframe> 
+   </div> 
+  </section> 
+  <!-- Contact --> 
+  <section id="contact" class="contact" data-animate> 
+   <h2>Contact Me</h2> 
+   <p>Let’s connect 👇</p> 
+   <a href="mailto:sahilrajheti@gmail.com">📧 Email</a> 
+   <a href="https://www.linkedin.com" target="_blank">💼 LinkedIn</a> 
+   <a href="https://twitter.com" target="_blank">🐦 Twitter</a> 
+   <a href="https://t.me" target="_blank">📲 Telegram</a> 
+   <a href="https://instagram.com" target="_blank">📸 Instagram</a> 
+   <a href="https://facebook.com" target="_blank">📘 Facebook</a> 
+  </section> 
+  <!-- Footer --> 
+  <footer> 
+   <p>© 2025 Sahil Rajheti | Built with ❤️ and technology.</p> 
+  </footer> 
+  <!-- Animation Script --> 
+  <script>
+    const animateElements = document.querySelectorAll("[data-animate]");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    animateElements.forEach(el => observer.observe(el));
+  </script>   
+ </body>
+</html>
