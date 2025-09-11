@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil’s AI Portfolio 🚀</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f1f, #1a1a3d, #2a2a5a);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00ffe0, #ff00ff, #00ff88);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffe0; }
+      to { text-shadow: 0 0 20px #ff00ff; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #00ffe0; }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00ffe0;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #00ffe0, #ff00ff);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #ff00ff;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      backdrop-filter: blur(5px);
+      transition: 0.3s;
+    }
+    .card:hover { transform: scale(1.03); }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 50px;
+    }
+
+    /* Typing effect */
+    .typing {
+      color: #00ffe0;
+      font-size: 1.1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #00ffe0;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.7s infinite;
+      margin: auto;
+      max-width: 100%;
+    }
+
+    @keyframes typing { from { width: 0; } to { width: 100%; } }
+    @keyframes blink { 50% { border-color: transparent; } }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>✨ Sahil’s AI Portfolio ✨</h1>
+    <p class="typing">Exploring AI • Coding • Creativity 🚀</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m <strong>Sahil Rajheti</strong>, a passionate learner and creator.  
+      I love exploring Artificial Intelligence, coding, and building creative projects for the web.  
+      This portfolio shows my journey 🚀</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="card">💻 C, C++, Python, JavaScript</div>
+    <div class="card">🌐 Web Development (HTML, CSS, JS)</div>
+    <div class="card">🤖 AI & Machine Learning (Beginner)</div>
+    <div class="card">📱 App Development Basics</div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>AI Chatbot</h3>
+      <p>A chatbot built using OpenAI API, designed to answer questions like ChatGPT.</p>
+    </div>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>This website itself — hosted free on GitHub Pages using HTML, CSS & JS.</p>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="card">
+      <h3>How to Earn Money Online 💰</h3>
+      <p>A simple guide on different ways to earn using skills & the internet.</p>
+    </div>
+    <div class="card">
+      <h3>My BCA Journey 📚</h3>
+      <p>Sharing my college experiences, challenges, and how I learn programming.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: <a href="mailto:sahilrajheti@gmail.com" style="color:#00ffe0;">sahilrajheti@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://linkedin.com" target="_blank" style="color:#00ffe0;">linkedin.com/in/sahilrajheti</a></p>
+    <p>🐦 Twitter: <a href="https://twitter.com" target="_blank" style="color:#00ffe0;">@sahilrajheti</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    🚀 Built with ❤️ by Sahil using AI-inspired design + GitHub Pages
+  </footer>
+
+</body>
+</html>
