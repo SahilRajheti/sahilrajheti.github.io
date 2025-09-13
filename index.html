@@ -4,174 +4,188 @@
  <body> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Sahil Rajheti | Portfolio &amp; Chatbot</title> 
-  <!-- SEO Meta Tags --> 
-  <meta name="description" content="Portfolio of Sahil Rajheti, BCA student at JMS Group of Institutions, Hapur. Skilled in Web Development, AI Chatbots, and Digital Innovation."> 
-  <meta name="keywords" content="Sahil Rajheti, JMS Group of Institutions Hapur, BCA Student, Web Developer, AI Chatbot Developer, Programming Projects, Portfolio Website, Earn Money Online, Hapur Uttar Pradesh"> 
-  <meta name="author" content="Sahil Rajheti"> 
-  <!-- Fonts --> 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&amp;display=swap" rel="stylesheet"> 
-  <!-- Styles --> 
+  <title>Sahil’s AI Portfolio 🚀</title> 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
     body {
-      font-family: "Poppins", sans-serif;
-      background: #0f172a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f1f, #1a1a3d, #2a2a5a);
       color: #fff;
       line-height: 1.6;
     }
+
     header {
-      background: linear-gradient(135deg, #007bff, #00d4ff);
-      padding: 20px;
       text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00ffe0, #ff00ff, #00ff88);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffe0; }
+      to { text-shadow: 0 0 20px #ff00ff; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(8px);
       position: sticky;
       top: 0;
-      z-index: 1000;
     }
-    header h1 { font-size: 2rem; }
+
     nav a {
       color: #fff;
-      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
-    nav a:hover { text-decoration: underline; }
+    nav a:hover { color: #00ffe0; }
+
     section {
-      padding: 60px 20px;
-      max-width: 1100px;
+      max-width: 900px;
       margin: auto;
+      padding: 60px 20px;
+      text-align: center;
     }
+
     h2 {
       font-size: 2rem;
       margin-bottom: 20px;
-      text-align: center;
-      color: #00d4ff;
-    }
-    p { margin-bottom: 15px; text-align: center; }
-
-    /* About */
-    .about img {
-      width: 160px;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto 20px;
-      border: 3px solid #00d4ff;
+      color: #00ffe0;
     }
 
-    /* Skills */
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #00ffe0, #ff00ff);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
     }
-    .skill {
-      background: #1e293b;
-      padding: 10px 20px;
-      border-radius: 5px;
-      border: 1px solid #
-    /* Contact */
-    .contact a {
-      display: inline-block;
-      margin: 10px;
-      color: #00d4ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .contact a:hover { text-decoration: underline; }
 
-    /* Footer */
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #ff00ff;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      backdrop-filter: blur(5px);
+      transition: 0.3s;
+    }
+    .card:hover { transform: scale(1.03); }
+
     footer {
-      background: #0f172a;
       text-align: center;
       padding: 20px;
-      border-top: 1px solid #1e293b;
+      background: rgba(255,255,255,0.05);
       font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 50px;
     }
 
-    /* Animations */
-    [data-animate] {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.8s ease-out;
-    }
-    [data-animate].visible {
-      opacity: 1;
-      transform: translateY(0);
+    /* Typing effect */
+    .typing {
+      color: #00ffe0;
+      font-size: 1.1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #00ffe0;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.7s infinite;
+      margin: auto;
+      max-width: 100%;
     }
 
-    @media (max-width: 768px) {
-      header h1 { font-size: 1.5rem; }
-      h2 { font-size: 1.5rem; }
-      iframe.chatbot { height: 400px; }
-    }
+    @keyframes typing { from { width: 0; } to { width: 100%; } }
+    @keyframes blink { 50% { border-color: transparent; } }
   </style> 
-  <!-- Header --> 
+  <!-- HEADER --> 
   <header> 
-   <h1>Sahil Rajheti</h1> 
-   <nav> 
-    <a href="#about">About</a> 
-    <a href="#skills">Skills</a> 
-    <a href="#projects">Projects</a> 
-    <a href="#contact">Contact</a> 
-   </nav> 
+   <h1>✨ Sahil’s AI Portfolio ✨</h1> 
+   <p class="typing">Exploring AI • Coding • Creativity 🚀</p> 
   </header> 
-  <!-- About --> 
-  <section id="about" class="about" data-animate> 
-   <img src="IMG_0147.jpeg" alt="Sahil Rajheti"> 
+  <!-- NAVIGATION --> 
+  <nav> 
+   <a href="#about">About</a> 
+   <a href="#skills">Skills</a> 
+   <a href="#projects">Projects</a> 
+   <a href="#blog">Blog</a> 
+   <a href="#contact">Contact</a> 
+  </nav> 
+  <!-- ABOUT --> 
+  <section id="about"> 
    <h2>About Me</h2> 
-   <p>Hello! I am <strong>Sahil Rajheti</strong>, a BCA student at <strong>JMS Group of Institutions, Hapur</strong>. I love building websites, experimenting with AI, and creating useful tools like chatbots.</p> 
+   <p>Hello! I’m <strong>Sahil Rajheti</strong>, a passionate learner and creator. I love exploring Artificial Intelligence, coding, and building creative projects for the web. This portfolio shows my journey 🚀</p> 
   </section> 
-  <!-- Skills --> 
-  <section id="skills" data-animate> 
-   <h2>My Professional Skills</h2> 
-   <div class="skills-list"> 
-    <span class="skill">Web Development</span> 
-    <span class="skill">C Programming</span> 
-    <span class="skill">Python</span> 
-    <span class="skill">AI Chatbot Development</span> 
-    <span class="skill">HTML, CSS, JS</span> 
-    <span class="skill">Database Management</span> 
-    <span class="skill">SEO Optimization</span> 
-    <span class="skill">Digital Innovation</span> 
+  <!-- SKILLS --> 
+  <section id="skills"> 
+   <h2>My Skills</h2> 
+   <div class="card">
+     💻 C, C++, Python, JavaScript 
+   </div> 
+   <div class="card">
+     🌐 Web Development (HTML, CSS, JS) 
+   </div> 
+   <div class="card">
+     🤖 AI &amp; Machine Learning (Beginner) 
+   </div> 
+   <div class="card">
+     📱 App Development Basics 
    </div> 
   </section> 
-  <!-- Projects --> 
-   
-  <!-- Contact --> 
-  <section id="contact" class="contact" data-animate> 
-   <h2>Contact Me</h2> 
-   <p>Let’s connect 👇</p> 
-   <a href="mailto:sahilrajheti@gmail.com">📧 Email</a> 
-   <a href="https://www.linkedin.com" target="_blank">💼 LinkedIn</a> 
-   <a href="https://twitter.com" target="_blank">🐦 Twitter</a> 
-   <a href="https://t.me" target="_blank">📲 Telegram</a> 
-   <a href="https://instagram.com" target="_blank">📸 Instagram</a> 
-   <a href="https://facebook.com" target="_blank">📘 Facebook</a> 
+  <!-- PROJECTS --> 
+  <section id="projects"> 
+   <h2>Projects</h2> 
+   <div class="card"> 
+    <h3>AI Chatbot</h3> 
+    <p>A chatbot built using OpenAI API, designed to answer questions like ChatGPT.</p> 
+   </div> 
+   <div class="card"> 
+    <h3>Portfolio Website</h3> 
+    <p>This website itself — hosted free on GitHub Pages using HTML, CSS &amp; JS.</p> 
+   </div> 
   </section> 
-  <!-- Footer --> 
-  <footer> 
-   <p>© 2025 Sahil Rajheti | Built with ❤️ and technology.</p> 
-  </footer> 
-  <!-- Animation Script --> 
-  <script>
-    const animateElements = document.querySelectorAll("[data-animate]");
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.2 });
-
-    animateElements.forEach(el => observer.observe(el));
-  </script> 
+  <!-- BLOG --> 
+  <section id="blog"> 
+   <h2>Blog</h2> 
+   <div class="card"> 
+    <h3>How to Earn Money Online 💰</h3> 
+    <p>A simple guide on different ways to earn using skills &amp; the internet.</p> 
+   </div> 
+   <div class="card"> 
+    <h3>My BCA Journey 📚</h3> 
+    <p>Sharing my college experiences, challenges, and how I learn programming.</p> 
+   </div> 
+  </section> 
+  <!-- CONTACT --> 
+  <section id="contact"> 
+   <h2>Contact Me</h2> 
+   <p>📧 Email: <a href="mailto:sahilrajheti@gmail.com" style="color:#00ffe0;">sahilrajheti@gmail.com</a></p> 
+   <p>🔗 LinkedIn: <a href="https://linkedin.com" target="_blank" style="color:#00ffe0;">linkedin.com/in/sahilrajheti</a></p> 
+   <p>🐦 Twitter: <a href="https://twitter.com" target="_blank" style="color:#00ffe0;">@sahilrajheti</a></p> 
+  </section> 
+  <!-- FOOTER --> 
+  <footer>
+    🚀 Built with ❤️ by Sahil using AI-inspired design + GitHub Pages 
+  </footer>   
  </body>
- <!-- Chatbase chatbot -->
-<script>
-  window.chatbaseConfig = {
-    chatbotId: "hx93bmw7d2ilkqngr59cdifyh3bfupbm"
-  }
-</script>
-<script src="https://www.chatbase.co/embed.min.js" id="hx93bmw7d2ilkqngr59cdifyh3bfupbm" defer></script>
 </html>
